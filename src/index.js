@@ -1,17 +1,64 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+/*
+██╗   ██╗███████╗███████╗██╗  ██╗██╗   ██╗ █████╗
+╚██╗ ██╔╝██╔════╝██╔════╝██║  ██║██║   ██║██╔══██╗
+ ╚████╔╝ █████╗  ███████╗███████║██║   ██║███████║
+  ╚██╔╝  ██╔══╝  ╚════██║██╔══██║██║   ██║██╔══██║
+   ██║   ███████╗███████║██║  ██║╚██████╔╝██║  ██║
+   ╚═╝   ╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝
+
+███╗   ██╗███████╗████████╗██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗
+████╗  ██║██╔════╝╚══██╔══╝██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝
+██╔██╗ ██║█████╗     ██║   ██║ █╗ ██║██║   ██║██████╔╝█████╔╝
+██║╚██╗██║██╔══╝     ██║   ██║███╗██║██║   ██║██╔══██╗██╔═██╗
+██║ ╚████║███████╗   ██║   ╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗
+╚═╝  ╚═══╝╚══════╝   ╚═╝    ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+*/
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { createBrowserHistory } from 'history'
+import { Route, Router, Switch } from 'react-router'
+
+import 'assets/scss/yeshua-network.scss'
+
+// pages for this product
+import AboutUsPage from 'views/AboutUsPage/AboutUsPage.js'
+import BlogPostPage from 'views/BlogPostPage/BlogPostPage.js'
+import BlogPostsPage from 'views/BlogPostsPage/BlogPostsPage.js'
+import ComponentsPage from 'views/ComponentsPage/ComponentsPage.js'
+import ContactUsPage from 'views/ContactUsPage/ContactUsPage.js'
+import EcommercePage from 'views/EcommercePage/EcommercePage.js'
+import LandingPage from 'views/LandingPage/LandingPage.js'
+import LoginPage from 'views/LoginPage/LoginPage.js'
+import PricingPage from 'views/PricingPage/PricingPage.js'
+import ProfilePage from 'views/ProfilePage/ProfilePage.js'
+import ProductPage from 'views/ProductPage/ProductPage.js'
+import SectionsPage from 'views/SectionsPage/SectionsPage.js'
+import ShoppingCartPage from 'views/ShoppingCartPage/ShoppingCartPage.js'
+import SignupPage from 'views/SignupPage/SignupPage.js'
+import ErrorPage from 'views/ErrorPage/ErrorPage.js'
+
+let hist = createBrowserHistory()
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    <Router history={hist}>
+        <Switch>
+            <Route path="/about-us" component={AboutUsPage}/>
+            <Route path="/blog-post" component={BlogPostPage}/>
+            <Route path="/blog-posts" component={BlogPostsPage}/>
+            <Route path="/components" component={ComponentsPage}/>
+            <Route path="/contact-us" component={ContactUsPage}/>
+            <Route path="/ecommerce-page" component={EcommercePage}/>
+            <Route path="/login-page" component={LoginPage}/>
+            <Route path="/pricing" component={PricingPage}/>
+            <Route path="/profile-page" component={ProfilePage}/>
+            <Route path="/product-page" component={ProductPage}/>
+            <Route path="/sections" component={SectionsPage}/>
+            <Route path="/shopping-cart-page" component={ShoppingCartPage}/>
+            <Route path="/signup-page" component={SignupPage}/>
+            <Route path="/error-page" component={ErrorPage}/>
+            <Route path="/" component={LandingPage}/>
+        </Switch>
+    </Router>,
+    document.getElementById('root')
+)
