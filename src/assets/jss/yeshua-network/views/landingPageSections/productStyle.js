@@ -1,20 +1,21 @@
-import { title, grayColor } from 'assets/jss/yeshua-network'
+import { grayColor, title } from 'assets/jss/yeshua-network'
 
 const productStyle = {
-  section: {
-    padding: '70px 0',
-    textAlign: 'center',
-  },
-  title: {
-    ...title,
-    marginBottom: '1rem',
-    marginTop: '30px',
-    minHeight: '32px',
-    textDecoration: 'none',
-  },
-  description: {
-    color: grayColor[0],
-  },
+	section: {
+		padding: '70px 0',
+		textAlign: 'center',
+	},
+	title: {
+		...title,
+		marginBottom: '1rem',
+		marginTop: '30px',
+		minHeight: '32px',
+		textDecoration: 'none',
+	},
+	description: {
+		color: grayColor[0],
+		textAlign: 'justify',
+	},
 }
 
 export default productStyle

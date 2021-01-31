@@ -1,27 +1,21 @@
-import {
-  container,
-  title,
-  cardTitle,
-  grayColor,
-  coloredShadow,
-} from 'assets/jss/yeshua-network'
+import { cardTitle, coloredShadow, container, grayColor, title, } from 'assets/jss/yeshua-network'
 
 const sectionSimilarStoriesStyle = {
-  container,
-  title,
-  cardTitle,
-  coloredShadow,
-  textCenter: {
-    textAlign: 'center',
-  },
-  section: {
-    backgroundPosition: '50%',
-    backgroundSize: 'cover',
-    padding: '70px 0',
-  },
-  description: {
-    color: grayColor[0],
-  },
+	container,
+	title,
+	cardTitle,
+	coloredShadow,
+	textCenter: {
+		textAlign: 'center',
+	},
+	section: {
+		backgroundPosition: '50%',
+		backgroundSize: 'cover',
+		padding: '70px 0',
+	},
+	description: {
+		color: grayColor[0],
+	},
 }
 
 export default sectionSimilarStoriesStyle
