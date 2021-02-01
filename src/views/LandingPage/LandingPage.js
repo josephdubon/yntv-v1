@@ -80,10 +80,11 @@ export default function LandingPage ({ ...rest }) {
 									<h1 className={classes.title}>Yeshua Network</h1>
 									<h4>
 										Welcome to the Yeshua Network we create content and media of all types that
-										inspire, educate and testify of the One True Living Creator (YHWH). We create
-										content that stands on the written word of YHWH, and the teachings of Yeshua
-										Ha’Mashiach and His disciples. Our name is the “Yeshua” network because, like
-										all of creation, everything here points towards Him.
+										inspire, educate and testify of the One True Living Creator (YHWH).
+										<br/>
+										<br/>
+										We create content that stands on the written word of YHWH, and the teachings of
+										Yeshua Ha’Mashiach and His disciples.
 									</h4>
 									<br/>
 									<Button color="danger" size="lg">
@@ -122,11 +123,13 @@ export default function LandingPage ({ ...rest }) {
 										classes.textCenter
 									)}
 								>
-									<h1 className={classes.title}>Yeshua Network</h1>
+									<h2 className={classes.title}>...like all of creation, everything here points
+										towards Him.</h2>
 									<h4>
 										Take a look around, enjoy the videos, blogs, pictures, news updates, links,
 										upcoming and past events, and our sponsors’ pages, all of which glorify the King
-										of Kings!
+										of Kings! Our name is the “Yeshua” network because, like
+										all of creation, everything here points towards Him.
 									</h4>
 									<br/>
 									<h6>Connect with us on:</h6>
@@ -163,10 +166,14 @@ export default function LandingPage ({ ...rest }) {
 									md={7}
 									className={classNames(classes.mlAuto, classes.textRight)}
 								>
-									<h1 className={classes.title}>New Collection 50% Off</h1>
+									<h2 className={classes.title}>Be blessed by our ministry.</h2>
 									<h4>
 										We hope you are blessed by our ministry here at the Yeshua Network and that it
 										inspires you to be a blessing in all that you do.
+										<br/>
+										<br/>
+										Feel free to stop by our shop and show support by purchasing a t-shirt, coffee
+										mug or t-shirt.
 									</h4>
 									<br/>
 									<div>
