@@ -20,7 +20,7 @@ export default function SectionProduct () {
 	return (
 		<div className={classes.section}>
 			<GridContainer justify='center'>
-				<GridItem xs={12} sm={8} md={8}>
+				<GridItem xs={12} sm={12} md={12}>
 					<h3 className={classes.title}>Welcome to the Yeshua Network!</h3>
 					<h5 className={classes.description}>
 						Welcome to the Yeshua Network we create content and media of all types that inspire, educate and
