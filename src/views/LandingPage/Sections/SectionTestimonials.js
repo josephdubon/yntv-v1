@@ -23,14 +23,6 @@ const useStyles = makeStyles(testimonialsStyle)
 
 export default function SectionTestimonials ({ ...rest }) {
 	const classes = useStyles()
-	const settings = {
-		dots: true,
-		infinite: true,
-		speed: 500,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: false
-	}
 	return (
 		<div className="cd-section" {...rest}>
 			{/* Testimonials 1 START */}

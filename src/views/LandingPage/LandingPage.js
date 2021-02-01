@@ -4,18 +4,18 @@ import React from 'react'
 // nodejs library to set properties for components
 // nodejs library that concatenates classes
 import classNames from 'classnames'
-// @material-ui/core components
-import { makeStyles } from '@material-ui/core/styles'
-// @material-ui/icons
+// @material-ui
 import Favorite from '@material-ui/icons/Favorite'
+import Share from '@material-ui/icons/Share'
+import ShoppingCart from '@material-ui/icons/ShoppingCart'
+import TwitterIcon from '@material-ui/icons/Twitter'
+import FacebookIcon from '@material-ui/icons/Facebook'
+import InstagramIcon from '@material-ui/icons/Instagram'
 // core components
 import Header from 'components/Header/Header.js'
 import Footer from 'components/Footer/Footer.js'
-import GridContainer from 'components/Grid/GridContainer.js'
-import GridItem from 'components/Grid/GridItem.js'
 import HeaderLinks from 'components/Header/HeaderLinks.js'
-import Parallax from 'components/Parallax/Parallax.js'
-
+// react component for creating beautiful carousel
 import landingPageStyle from 'assets/jss/yeshua-network/views/landingPageStyle.js'
 
 // Sections for this page
@@ -25,6 +25,19 @@ import SectionWork from './Sections/SectionWork.js'
 import SectionQuote from './Sections/SectionQuote'
 import SectionTestimonial from './Sections/SectionTestimonials'
 
+// @material-ui/core components
+import GridContainer from '../../components/Grid/GridContainer'
+import GridItem from '../../components/Grid/GridItem'
+import Button from '../../components/CustomButtons/Button'
+
+import { makeStyles } from '@material-ui/core/styles'
+
+// For slider
+import Carousel from 'react-slick'
+import dg1 from '../../assets/img/dg1.jpg'
+import dg2 from '../../assets/img/dg2.jpg'
+import dg3 from '../../assets/img/dg3.jpg'
+
 const useStyles = makeStyles(landingPageStyle)
 
 export default function LandingPage ({ ...rest }) {
@@ -33,6 +46,14 @@ export default function LandingPage ({ ...rest }) {
 		document.body.scrollTop = 0
 	})
 	const classes = useStyles()
+	const settings = {
+		accessibility: true,
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1
+	}
 	return (
 		<div>
 			<Header
@@ -46,41 +67,123 @@ export default function LandingPage ({ ...rest }) {
 				}}
 				{...rest}
 			/>
-			<Parallax image={require('assets/img/bg8.jpg')} filter='dark'>
-				<div className={classes.container}>
-					<GridContainer
-						direction='row'
-						justify='center'
-						alignItems='center'
+			<Carousel {...settings}>
+				{/* Carousel 1 START */}
+				<div>
+					<div
+						className={classes.pageHeader}
+						style={{ backgroundImage: `url("${dg1}")` }}
 					>
-						<GridItem xs={12} sm={6} md={6}>
-							<h1 className={classes.title}>Be blessed by our ministry.</h1>
-							<h5>
-								Welcome to the Yeshua Network we create content and media of all types that inspire,
-								educate and testify of the One True Living Creator (YHWH).
-							</h5>
-						</GridItem>
-						<GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>
-							<GridContainer
-								direction='row'
-								justify='center'
-								alignItems='center'
-							>
-								<div className={classes.iframeContainer}>
-									<iframe
-										height='250'
-										src='https://www.youtube.com/embed/wRFVzkvUyEk'
-										frameBorder='0'
-										allow='encrypted-media'
-										allowFullScreen=''
-										title='Yeshua Network'
-									/>
-								</div>
+						<div className={classes.container}>
+							<GridContainer>
+								<GridItem xs={12} sm={6} md={6}>
+									<h1 className={classes.title}>Yeshua Network</h1>
+									<h4>
+										Welcome to the Yeshua Network we create content and media of all types that
+										inspire, educate and testify of the One True Living Creator (YHWH). We create
+										content that stands on the written word of YHWH, and the teachings of Yeshua
+										Ha’Mashiach and His disciples. Our name is the “Yeshua” network because, like
+										all of creation, everything here points towards Him.
+									</h4>
+									<br/>
+									<Button color="danger" size="lg">
+										Read more
+									</Button>
+									<Button justIcon color="white" simple>
+										<i className="fab fa-twitter"/>
+									</Button>
+									<Button justIcon color="white" simple>
+										<i className="fab fa-facebook-square"/>
+									</Button>
+									<Button justIcon color="white" simple>
+										<i className="fab fa-get-pocket"/>
+									</Button>
+								</GridItem>
 							</GridContainer>
-						</GridItem>
-					</GridContainer>
+						</div>
+					</div>
 				</div>
-			</Parallax>
+				{/* Carousel 1 END */}
+				{/* Carousel 2 START */}
+				<div>
+					<div
+						className={classes.pageHeader}
+						style={{ backgroundImage: `url("${dg2}")` }}
+					>
+						<div className={classes.container}>
+							<GridContainer>
+								<GridItem
+									xs={12}
+									sm={8}
+									md={8}
+									className={classNames(
+										classes.mlAuto,
+										classes.mrAuto,
+										classes.textCenter
+									)}
+								>
+									<h1 className={classes.title}>Yeshua Network</h1>
+									<h4>
+										Take a look around, enjoy the videos, blogs, pictures, news updates, links,
+										upcoming and past events, and our sponsors’ pages, all of which glorify the King
+										of Kings!
+									</h4>
+									<br/>
+									<h6>Connect with us on:</h6>
+									<div>
+										<Button color="white" simple size="lg" justIcon>
+											<TwitterIcon/>
+										</Button>
+										<Button color="white" simple size="lg" justIcon>
+											<FacebookIcon/>
+										</Button>
+										<Button color="white" simple size="lg" justIcon>
+											<InstagramIcon/>
+										</Button>
+									</div>
+								</GridItem>
+							</GridContainer>
+						</div>
+					</div>
+				</div>
+				{/* Carousel 2 END */}
+
+
+				{/* Carousel 3 START */}
+				<div>
+					<div
+						className={classes.pageHeader}
+						style={{ backgroundImage: `url("${dg3}")` }}
+					>
+						<div className={classes.container}>
+							<GridContainer>
+								<GridItem
+									xs={12}
+									sm={7}
+									md={7}
+									className={classNames(classes.mlAuto, classes.textRight)}
+								>
+									<h1 className={classes.title}>New Collection 50% Off</h1>
+									<h4>
+										We hope you are blessed by our ministry here at the Yeshua Network and that it
+										inspires you to be a blessing in all that you do.
+									</h4>
+									<br/>
+									<div>
+										<Button color="white" simple size="lg">
+											<Share/> Share Offer
+										</Button>
+										<Button color="danger" size="lg">
+											<ShoppingCart/> Shop now
+										</Button>
+									</div>
+								</GridItem>
+							</GridContainer>
+						</div>
+					</div>
+				</div>
+				{/* Carousel 3 END */}
+			</Carousel>
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div className={classes.container}>
 					<SectionProduct/>

@@ -21,6 +21,7 @@
 // // // Example: input = #999 => output = 153, 153, 153
 // // // Example: input = 999 => output = 153, 153, 153
 // #############################
+
 const hexToRgb = input => {
 	input = input + ''
 	input = input.replace('#', '')

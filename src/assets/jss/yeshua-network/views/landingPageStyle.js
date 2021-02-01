@@ -1,6 +1,46 @@
-import { container, main, mainRaised, title, whiteColor, } from 'assets/jss/yeshua-network'
+import {
+	blackColor,
+	container,
+	hexToRgb,
+	main,
+	mainRaised,
+	mrAuto,
+	title,
+	whiteColor,
+} from 'assets/jss/yeshua-network'
 
 const landingPageStyle = {
+	sectionBlank: {
+		height: '70px',
+		display: 'block',
+	},
+	pageHeader: {
+		position: 'relative',
+		height: '100vh',
+		maxHeight: '1600px',
+		backgroundPosition: '50%',
+		backgroundSize: 'cover',
+		margin: '0',
+		padding: '0',
+		border: '0',
+		display: 'flex',
+		WebkitBoxAlign: 'center',
+		MsFlexAlign: 'center',
+		alignItems: 'center',
+		'&:before': {
+			background: 'rgba(' + hexToRgb(blackColor) + ', 0.5)',
+		},
+		'&:after,&:before': {
+			position: 'absolute',
+			zIndex: '1',
+			width: '100%',
+			height: '100%',
+			display: 'block',
+			left: '0',
+			top: '0',
+			content: '\'\'',
+		},
+	},
 	container: {
 		color: whiteColor,
 		...container,
@@ -61,6 +101,23 @@ const landingPageStyle = {
 		height: '18px',
 		top: '3px',
 		position: 'relative',
+	},
+	mrAuto,
+	textCenter: {
+		textAlign: 'center',
+	},
+	card: {
+		marginTop: '60px',
+	},
+	formControl: {
+		margin: '0',
+		padding: '8px 0 0 0',
+	},
+	textRight: {
+		textAlign: 'right',
+	},
+	button: {
+		margin: '0 !important',
 	},
 }
 
