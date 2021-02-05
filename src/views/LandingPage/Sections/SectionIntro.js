@@ -15,7 +15,7 @@ import productStyle from 'assets/jss/yeshua-network/views/landingPageSections/pr
 
 const useStyles = makeStyles(productStyle)
 
-export default function SectionProduct () {
+export default function SectionIntro () {
 	const classes = useStyles()
 	return (
 		<div className={classes.section}>
