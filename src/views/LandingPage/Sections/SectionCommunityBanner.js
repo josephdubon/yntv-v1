@@ -17,7 +17,7 @@ const style = {
 
 const useStyles = makeStyles(style)
 
-export default function SectionQuote () {
+export default function SectionCommunityBanner () {
 	const classes = useStyles()
 	return (
 		<Card
@@ -28,7 +28,7 @@ export default function SectionQuote () {
 		>
 			<CardBody background>
 				<h6 className={classes.cardCategoryWhite}>JOIN OUR COMMUNITY</h6>
-				<a href="#pablo" onClick={e => e.preventDefault()}>
+				<a href="#" onClick={e => e.preventDefault()}>
 					<h3 className={classes.cardTitleWhite}>
 						Yeshua Network Online Community Coming Soon...
 					</h3>
