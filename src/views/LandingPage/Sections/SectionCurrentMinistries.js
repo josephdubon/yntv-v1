@@ -26,7 +26,7 @@ const style = {
 
 const useStyles = makeStyles(style)
 
-export default function SectionTeam () {
+export default function SectionCurrentMinistries () {
 	const classes = useStyles()
 	return (
 		<div className={classes.section}>
@@ -37,7 +37,7 @@ export default function SectionTeam () {
 						<GridItem
 							xs={12}
 							sm={12}
-							md={10}
+							md={12}
 							className={classes.mlAuto + ' ' + classes.mrAuto}
 						>
 							<h2 className={classes.title}>Current Ministries</h2>
@@ -46,7 +46,7 @@ export default function SectionTeam () {
 								<GridItem xs={12} sm={6} md={6}>
 									<Card plain blog>
 										<CardHeader plain image>
-											<a href='#pablito' onClick={e => e.preventDefault()}>
+											<a href='#' onClick={e => e.preventDefault()}>
 												<img src={cardBlog4} alt='...'/>
 											</a>
 											<div
@@ -62,7 +62,7 @@ export default function SectionTeam () {
 												<h6 className={classes.cardCategory}>Entire Bible Read Through</h6>
 											</Info>
 											<h4 className={classes.cardTitle}>
-												<a href='#pablo' onClick={e => e.preventDefault()}>
+												<a href='#' onClick={e => e.preventDefault()}>
 													'GOT QUESTIONS?'
 												</a>
 											</h4>
@@ -76,7 +76,7 @@ export default function SectionTeam () {
 
 												Leave your comments and questions to be read live this Sunday!
 												<br/>
-												<a href='#pablo' onClick={e => e.preventDefault()}>
+												<a href='#' onClick={e => e.preventDefault()}>
 													{' '}
 													Read More{' '}
 												</a>
@@ -87,7 +87,7 @@ export default function SectionTeam () {
 								<GridItem xs={12} sm={6} md={6}>
 									<Card plain blog>
 										<CardHeader plain image>
-											<a href='#pablito' onClick={e => e.preventDefault()}>
+											<a href='#' onClick={e => e.preventDefault()}>
 												<img src={blog5} alt='...'/>
 											</a>
 											<div
@@ -103,7 +103,7 @@ export default function SectionTeam () {
 												<h6 className={classes.cardCategory}>Testimony Tuesdays</h6>
 											</Success>
 											<h4 className={classes.cardTitle}>
-												<a href='#pablo' onClick={e => e.preventDefault()}>
+												<a href='#' onClick={e => e.preventDefault()}>
 													Come and testify of His goodness with us!
 												</a>
 											</h4>
@@ -115,7 +115,7 @@ export default function SectionTeam () {
 												gives you a chance to share what He did in yours as well! Come and
 												testify of His goodness with us!
 												<br/>
-												<a href='#pablo' onClick={e => e.preventDefault()}>
+												<a href='#' onClick={e => e.preventDefault()}>
 													{' '}
 													Read More{' '}
 												</a>
@@ -126,7 +126,7 @@ export default function SectionTeam () {
 								<GridItem xs={12} sm={6} md={6}>
 									<Card plain blog>
 										<CardHeader plain image>
-											<a href='#pablito' onClick={e => e.preventDefault()}>
+											<a href='#' onClick={e => e.preventDefault()}>
 												<img src={blog5} alt='...'/>
 											</a>
 											<div
@@ -142,7 +142,7 @@ export default function SectionTeam () {
 												<h6 className={classes.cardCategory}>Testimony Tuesdays</h6>
 											</Success>
 											<h4 className={classes.cardTitle}>
-												<a href='#pablo' onClick={e => e.preventDefault()}>
+												<a href='#' onClick={e => e.preventDefault()}>
 													Truth Me Free
 												</a>
 											</h4>
@@ -153,7 +153,7 @@ export default function SectionTeam () {
 												visited paradise (heaven) and was sent back to life by YHWH (God) to
 												tell his story and start the ministry you see here today.
 												<br/>
-												<a href='#pablo' onClick={e => e.preventDefault()}>
+												<a href='#' onClick={e => e.preventDefault()}>
 													{' '}
 													Read More{' '}
 												</a>
@@ -164,7 +164,7 @@ export default function SectionTeam () {
 								<GridItem xs={12} sm={6} md={6}>
 									<Card plain blog>
 										<CardHeader plain image>
-											<a href='#pablito' onClick={e => e.preventDefault()}>
+											<a href='#' onClick={e => e.preventDefault()}>
 												<img src={blog5} alt='...'/>
 											</a>
 											<div
@@ -180,7 +180,7 @@ export default function SectionTeam () {
 												<h6 className={classes.cardCategory}>Testimony Tuesdays</h6>
 											</Success>
 											<h4 className={classes.cardTitle}>
-												<a href='#pablo' onClick={e => e.preventDefault()}>
+												<a href='#' onClick={e => e.preventDefault()}>
 													#BeTheLight - Event
 												</a>
 											</h4>
@@ -193,7 +193,7 @@ export default function SectionTeam () {
 												picture of it with #BeTheLight on their social media pages. Together the
 												body of Christ shines brightly for all to see!
 												<br/>
-												<a href='#pablo' onClick={e => e.preventDefault()}>
+												<a href='#' onClick={e => e.preventDefault()}>
 													{' '}
 													Read More{' '}
 												</a>
