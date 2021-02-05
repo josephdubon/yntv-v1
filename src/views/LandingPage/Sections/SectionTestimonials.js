@@ -18,6 +18,7 @@ import dg2 from 'assets/img/dg2.jpg'
 import cardProfile1Square from 'assets/img/faces/card-profile1-square.jpg'
 import cardProfile2Square from 'assets/img/faces/card-profile2-square.jpg'
 import cardProfile4Square from 'assets/img/faces/card-profile4-square.jpg'
+import Button from '../../../components/CustomButtons/Button'
 
 const useStyles = makeStyles(testimonialsStyle)
 
@@ -40,15 +41,18 @@ export default function SectionTestimonials ({ ...rest }) {
 								classes.mlAuto + ' ' + classes.mrAuto + ' ' + classes.textCenter
 							}
 						>
-							<h2 className={classes.title}>Our Clients Love Us</h2>
+							<h3 className={classes.title}>
+								"See How They Love One Another!"
+								<br/>
+								<small>-1 Peter 1:22-2:3</small>
+							</h3>
 							<h5 className={classes.description}>
-								You need more information? Check what other persons are saying
-								about our product. They are very happy with their purchase.
+								Before you join, please read what members of our community are saying...
 							</h5>
 						</GridItem>
 					</GridContainer>
 					<GridContainer>
-						<GridItem xs={12} sm={4} md={4}>
+						<GridItem xs={12} sm={6} md={6}>
 							<Card testimonial className={classes.card1}>
 								<div className={classes.icon}>
 									<FormatQuote/>
@@ -64,14 +68,14 @@ export default function SectionTestimonials ({ ...rest }) {
 									<h4 className={classes.cardTitle}>Alec Thompson</h4>
 									<h6 className={classes.cardCategory}>@ALECTHOMPSON</h6>
 									<CardAvatar testimonial testimonialFooter>
-										<a href="#pablo" onClick={e => e.preventDefault()}>
+										<a href="#" onClick={e => e.preventDefault()}>
 											<img src={cardProfile1Square} alt="..."/>
 										</a>
 									</CardAvatar>
 								</CardFooter>
 							</Card>
 						</GridItem>
-						<GridItem xs={12} sm={4} md={4}>
+						<GridItem xs={12} sm={6} md={6}>
 							<Card testimonial className={classes.card1}>
 								<div className={classes.icon}>
 									<FormatQuote/>
@@ -88,14 +92,14 @@ export default function SectionTestimonials ({ ...rest }) {
 									<h4 className={classes.cardTitle}>Gina Andrew</h4>
 									<h6 className={classes.cardCategory}>@GINAANDREW</h6>
 									<CardAvatar testimonial testimonialFooter>
-										<a href="#pablo" onClick={e => e.preventDefault()}>
+										<a href="#" onClick={e => e.preventDefault()}>
 											<img src={cardProfile4Square} alt="..."/>
 										</a>
 									</CardAvatar>
 								</CardFooter>
 							</Card>
 						</GridItem>
-						<GridItem xs={12} sm={4} md={4}>
+						<GridItem xs={12} sm={12} md={12}>
 							<Card testimonial className={classes.card1}>
 								<div className={classes.icon}>
 									<FormatQuote/>
@@ -111,12 +115,21 @@ export default function SectionTestimonials ({ ...rest }) {
 									<h4 className={classes.cardTitle}>George West</h4>
 									<h6 className={classes.cardCategory}>@GEORGEWEST</h6>
 									<CardAvatar testimonial testimonialFooter>
-										<a href="#pablo" onClick={e => e.preventDefault()}>
+										<a href="#" onClick={e => e.preventDefault()}>
 											<img src={cardProfile2Square} alt="..."/>
 										</a>
 									</CardAvatar>
 								</CardFooter>
 							</Card>
+							<br/>
+							<br/>
+							<GridItem xs={12} sm={12} md={12} className={
+								classes.mlAuto + ' ' + classes.mrAuto + ' ' + classes.textCenter
+							}>
+								<Button color="danger" size="lg">
+									Sign Up
+								</Button>
+							</GridItem>
 						</GridItem>
 					</GridContainer>
 				</div>
