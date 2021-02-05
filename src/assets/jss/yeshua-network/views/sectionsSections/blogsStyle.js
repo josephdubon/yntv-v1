@@ -20,6 +20,9 @@ const blogsSection = {
 	blog: {
 		padding: '50px 0',
 	},
+	title_center: {
+		textAlign: 'center',
+	},
 	cardCategory: {
 		marginBottom: '0',
 		marginTop: '10px',
