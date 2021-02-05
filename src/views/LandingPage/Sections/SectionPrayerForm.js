@@ -13,7 +13,7 @@ import workStyle from 'assets/jss/yeshua-network/views/landingPageSections/workS
 
 const useStyles = makeStyles(workStyle)
 
-export default function SectionWork () {
+export default function SectionPrayerForm () {
 	const classes = useStyles()
 	return (
 		<div className={classes.section}>
