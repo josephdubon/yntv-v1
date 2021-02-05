@@ -89,27 +89,6 @@ export default function SectionBlogs ({ ...rest }) {
 							</Card>
 							<Card plain blog className={classes.card}>
 								<GridContainer>
-									<GridItem xs={12} sm={4} md={4}>
-										<CardHeader image plain>
-											<a href="#" onClick={e => e.preventDefault()}>
-												<img src={office2} alt="..."/>
-											</a>
-											<div
-												className={classes.coloredShadow}
-												style={{
-													backgroundImage: `url(${office2})`,
-													opacity: '1'
-												}}
-											/>
-											<div
-												className={classes.coloredShadow}
-												style={{
-													backgroundImage: `url(${office2})`,
-													opacity: '1'
-												}}
-											/>
-										</CardHeader>
-									</GridItem>
 									<GridItem xs={12} sm={8} md={8}>
 										<Danger>
 											<h6 className={classes.cardCategory}>
@@ -139,6 +118,27 @@ export default function SectionBlogs ({ ...rest }) {
 											</a>
 											, 2 days ago
 										</p>
+									</GridItem>
+									<GridItem xs={12} sm={4} md={4}>
+										<CardHeader image plain>
+											<a href="#" onClick={e => e.preventDefault()}>
+												<img src={office2} alt="..."/>
+											</a>
+											<div
+												className={classes.coloredShadow}
+												style={{
+													backgroundImage: `url(${office2})`,
+													opacity: '1'
+												}}
+											/>
+											<div
+												className={classes.coloredShadow}
+												style={{
+													backgroundImage: `url(${office2})`,
+													opacity: '1'
+												}}
+											/>
+										</CardHeader>
 									</GridItem>
 								</GridContainer>
 							</Card>
@@ -195,27 +195,6 @@ export default function SectionBlogs ({ ...rest }) {
 								</GridContainer>
 							</Card>
 						</GridItem>
-						<GridItem xs={12} sm={4} md={4}>
-							<CardHeader image plain>
-								<a href="#" onClick={e => e.preventDefault()}>
-									<img src={office2} alt="..."/>
-								</a>
-								<div
-									className={classes.coloredShadow}
-									style={{
-										backgroundImage: `url(${office2})`,
-										opacity: '1'
-									}}
-								/>
-								<div
-									className={classes.coloredShadow}
-									style={{
-										backgroundImage: `url(${office2})`,
-										opacity: '1'
-									}}
-								/>
-							</CardHeader>
-						</GridItem>
 						<GridItem xs={12} sm={8} md={8}>
 							<Danger>
 								<h6 className={classes.cardCategory}>
@@ -245,7 +224,27 @@ export default function SectionBlogs ({ ...rest }) {
 								</a>{' '}
 								, 2 days ago
 							</p>
-						</GridItem>
+						</GridItem> <GridItem xs={12} sm={4} md={4}>
+						<CardHeader image plain>
+							<a href="#" onClick={e => e.preventDefault()}>
+								<img src={office2} alt="..."/>
+							</a>
+							<div
+								className={classes.coloredShadow}
+								style={{
+									backgroundImage: `url(${office2})`,
+									opacity: '1'
+								}}
+							/>
+							<div
+								className={classes.coloredShadow}
+								style={{
+									backgroundImage: `url(${office2})`,
+									opacity: '1'
+								}}
+							/>
+						</CardHeader>
+					</GridItem>
 					</GridContainer>
 				</div>
 			</div>
