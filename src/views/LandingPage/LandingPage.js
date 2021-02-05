@@ -19,11 +19,12 @@ import HeaderLinks from 'components/Header/HeaderLinks.js'
 import landingPageStyle from 'assets/jss/yeshua-network/views/landingPageStyle.js'
 
 // Sections for this page
-import SectionProduct from './Sections/SectionProduct.js'
-import SectionTeam from './Sections/SectionTeam.js'
-import SectionWork from './Sections/SectionWork.js'
-import SectionQuote from './Sections/SectionQuote'
+import SectionIntro from './Sections/SectionIntro.js'
+import SectionCurrentMinistries from './Sections/SectionCurrentMinistries.js'
+import SectionPrayerForm from './Sections/SectionPrayerForm.js'
+import SectionCommunityBanner from './Sections/SectionCommunityBanner'
 import SectionTestimonial from './Sections/SectionTestimonials'
+import SectionLatestVideos from './Sections/SectionLatestVideos'
 
 // @material-ui/core components
 import GridContainer from '../../components/Grid/GridContainer'
@@ -91,13 +92,13 @@ export default function LandingPage ({ ...rest }) {
 										Read more
 									</Button>
 									<Button justIcon color="white" simple>
-										<i className="fab fa-twitter"/>
+										<TwitterIcon/>
 									</Button>
 									<Button justIcon color="white" simple>
-										<i className="fab fa-facebook-square"/>
+										<FacebookIcon/>
 									</Button>
 									<Button justIcon color="white" simple>
-										<i className="fab fa-get-pocket"/>
+										<InstagramIcon/>
 									</Button>
 								</GridItem>
 							</GridContainer>
@@ -193,11 +194,12 @@ export default function LandingPage ({ ...rest }) {
 			</Carousel>
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div className={classes.container}>
-					<SectionProduct/>
-					<SectionQuote/>
-					<SectionTeam/>
+					<SectionIntro/>
+					<SectionCommunityBanner/>
+					<SectionCurrentMinistries/>
 					<SectionTestimonial/>
-					<SectionWork/>
+					<SectionLatestVideos/>
+					<SectionPrayerForm/>
 				</div>
 			</div>
 			<Footer
