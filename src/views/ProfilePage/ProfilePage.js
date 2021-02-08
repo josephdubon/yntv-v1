@@ -42,6 +42,7 @@ import kendall from 'assets/img/faces/kendall.jpg'
 import cardProfile2Square from 'assets/img/faces/card-profile2-square.jpg'
 
 import profilePageStyle from 'assets/jss/yeshua-network/views/profilePageStyle.js'
+import { Link } from 'react-router-dom'
 
 const useStyles = makeStyles(profilePageStyle)
 
@@ -491,54 +492,52 @@ export default function ProfilePage ({ ...rest }) {
 				</div>
 			</div>
 			<Footer
+				className={classes.footer}
 				content={
 					<div>
 						<div className={classes.left}>
 							<List className={classes.list}>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/?ref=mkpr-profile"
-										target="_blank"
+									<Link
+										to='/'
 										className={classes.block}
 									>
-										Creative Tim
-									</a>
+										Home
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/presentation?ref=mkpr-profile"
-										target="_blank"
+									<Link
+										to='/about-us'
 										className={classes.block}
 									>
-										About us
-									</a>
+										About
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a href="//blog.creative-tim.com/" className={classes.block}>
+									<Link to='blog-posts' className={classes.block}>
 										Blog
-									</a>
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/license?ref=mkpr-profile"
-										target="_blank"
+									<Link
+										to='/contact-us'
 										className={classes.block}
 									>
-										Licenses
-									</a>
+										Contact
+									</Link>
 								</ListItem>
 							</List>
 						</div>
 						<div className={classes.right}>
-							&copy; {1900 + new Date().getYear()} , made with{' '}
+							&copy; {1900 + new Date().getYear()} | made with{' '}
 							<Favorite className={classes.icon}/> by{' '}
 							<a
-								href="https://www.creative-tim.com?ref=mkpr-profile"
-								target="_blank"
+								href='mailto:josephdubon@pm.me'
+								target='_blank'
 							>
-								Creative Tim
+								Yeshua Network
 							</a>{' '}
-							for a better web.
+							for a better world.
 						</div>
 					</div>
 				}

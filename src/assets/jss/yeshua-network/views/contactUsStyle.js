@@ -1,14 +1,14 @@
-import { container, description, main, mainRaised, mlAuto, title, } from 'assets/jss/yeshua-network'
+import { container, description, main, mainRaised, mlAuto, title, whiteColor, } from 'assets/jss/yeshua-network'
 
 const contactUsStyle = {
 	main,
 	mainRaised,
-	title,
 	mlAuto,
 	description,
 	container: {
 		...container,
 		maxWidth: '970px !important',
+		zIndex: '1',
 	},
 	contactContent: {
 		paddingBottom: '40px',
@@ -23,6 +23,12 @@ const contactUsStyle = {
 	info: {
 		paddingBottom: '10px',
 		paddingTop: 0,
+	},
+	title: {
+		...title,
+		'&, & + h4': {
+			color: whiteColor,
+		}
 	},
 	textCenter: {
 		textAlign: 'center !important',

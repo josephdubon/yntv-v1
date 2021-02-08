@@ -20,6 +20,8 @@ import SectionImage from './Sections/SectionImage.js'
 import SubscribeLine from './Sections/SubscribeLine.js'
 
 import blogPostsPageStyle from 'assets/jss/yeshua-network/views/blogPostsPageStyle.js'
+import { Link } from 'react-router-dom'
+import classNames from 'classnames'
 
 const useStyles = makeStyles(blogPostsPageStyle)
 
@@ -44,10 +46,22 @@ export default function BlogPostsPage () {
 			<Parallax image={require('assets/img/bg10.jpg')} filter="dark" small>
 				<div className={classes.container}>
 					<GridContainer justify="center">
-						<GridItem xs={12} sm={12} md={8} className={classes.textCenter}>
-							<h2 className={classes.title}>
-								A Place for Entrepreneurs to Share and Discover New Stories
-							</h2>
+						<GridItem
+							md={10}
+							sm={10}
+							className={classNames(
+								classes.mlAuto,
+								classes.mrAuto,
+								classes.textCenter
+							)}
+						>
+							<h1 className={classes.title}>News</h1>
+							<h4>
+								Here you find updates for things going on within the Yeshua Network and its affiliates,
+								as well as what is going on in the world around you. See something you like? Click on
+								the image and on each posting check the bottom of the page where you can leave your
+								thoughts in the comment section
+							</h4>
 						</GridItem>
 					</GridContainer>
 				</div>
@@ -66,49 +80,46 @@ export default function BlogPostsPage () {
 						<div className={classes.left}>
 							<List className={classes.list}>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/?ref=mkpr-blog-posts"
-										target="_blank"
+									<Link
+										to='/'
 										className={classes.block}
 									>
-										Creative Tim
-									</a>
+										Home
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/presentation?ref=mkpr-blog-posts"
-										target="_blank"
+									<Link
+										to='/about-us'
 										className={classes.block}
 									>
-										About us
-									</a>
+										About
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a href="//blog.creative-tim.com/" className={classes.block}>
+									<Link to='blog-posts' className={classes.block}>
 										Blog
-									</a>
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/license?ref=mkpr-blog-posts"
-										target="_blank"
+									<Link
+										to='/contact-us'
 										className={classes.block}
 									>
-										Licenses
-									</a>
+										Contact
+									</Link>
 								</ListItem>
 							</List>
 						</div>
 						<div className={classes.right}>
-							&copy; {1900 + new Date().getYear()} , made with{' '}
+							&copy; {1900 + new Date().getYear()} | made with{' '}
 							<Favorite className={classes.icon}/> by{' '}
 							<a
-								href="https://www.creative-tim.com?ref=mkpr-blog-posts"
-								target="_blank"
+								href='mailto:josephdubon@pm.me'
+								target='_blank'
 							>
-								Creative Tim
+								Yeshua Network
 							</a>{' '}
-							for a better web.
+							for a better world.
 						</div>
 					</div>
 				}

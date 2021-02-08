@@ -23,10 +23,16 @@ export default function SubscribeLine () {
 			<div className={classes.container}>
 				<GridContainer>
 					<GridItem xs={12} sm={6} md={6}>
-						<h3 className={classes.title}>Get Tips & Tricks every Week!</h3>
+						<h3 className={classes.title}>Sign Up For Our Newsletter!</h3>
 						<p className={classes.description}>
-							Join our newsletter and get news in your inbox every week! We hate
-							spam too, so no worries about this.
+							Become a member of the ever-growing family in Christ here on our page.
+							<br/>
+							<br/>
+							Get updates on when videos will be posted, news updates, and to learn about upcoming events.
+							<br/>
+							<br/>
+							Join in the blessings and be a part of what makes the Yeshua Network Community so special to
+							so many people around the world.
 						</p>
 					</GridItem>
 					<GridItem xs={12} sm={6} md={6}>

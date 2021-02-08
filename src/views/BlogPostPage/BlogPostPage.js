@@ -23,6 +23,7 @@ import SectionComments from './Sections/SectionComments.js'
 import SectionSimilarStories from './Sections/SectionSimilarStories.js'
 
 import blogPostPageStyle from 'assets/jss/yeshua-network/views/blogPostPageStyle.js'
+import { Link } from 'react-router-dom'
 
 const useStyles = makeStyles(blogPostPageStyle)
 
@@ -77,53 +78,46 @@ export default function BlogPostPage () {
 						<div className={classes.left}>
 							<List className={classes.list}>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/?ref=mkpr-blog-post"
-										target="_blank"
+									<Link
+										to='/'
 										className={classes.block}
 									>
-										Creative Tim
-									</a>
+										Home
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/presentation?ref=mkpr-blog-post"
-										target="_blank"
+									<Link
+										to='/about-us'
 										className={classes.block}
 									>
-										About us
-									</a>
+										About
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://blog.creative-tim.com/?ref=mkpr-blog-post"
-										target="_blank"
-										className={classes.block}
-									>
+									<Link to='blog-posts' className={classes.block}>
 										Blog
-									</a>
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/license?ref=mkpr-blog-post"
-										target="_blank"
+									<Link
+										to='/contact-us'
 										className={classes.block}
 									>
-										Licenses
-									</a>
+										Contact
+									</Link>
 								</ListItem>
 							</List>
 						</div>
 						<div className={classes.right}>
-							&copy; {1900 + new Date().getYear()} , made with{' '}
+							&copy; {1900 + new Date().getYear()} | made with{' '}
 							<Favorite className={classes.icon}/> by{' '}
 							<a
-								href="https://www.creative-tim.com?ref=mkpr-blog-post"
-								target="_blank"
+								href='mailto:josephdubon@pm.me'
+								target='_blank'
 							>
-								Creative Tim
+								Yeshua Network
 							</a>{' '}
-							for a better web.
+							for a better world.
 						</div>
 					</div>
 				}

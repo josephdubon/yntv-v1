@@ -17,16 +17,17 @@ export default function SectionDescription () {
 		<div className={classNames(classes.aboutDescription, classes.textCenter)}>
 			<GridContainer>
 				<GridItem
-					md={8}
-					sm={8}
+					md={12}
+					sm={12}
 					className={classNames(classes.mrAuto, classes.mlAuto)}
 				>
 					<h5 className={classes.description}>
-						This is the paragraph where you can write more details about your
-						product. Keep you user engaged by providing meaningful information.
-						Remember that by this time, the user is curious, otherwise he wouldn
-						{'\''}t scroll to get here. Add a button if you want the user to see
-						more.
+						You are not what the world says you are, you are what Yeshua says you are. You have been bought
+						by His love on the cross and in Him alone you are free.
+						<br/>
+						<br/>
+						Every happening, great and small, is a parable whereby God speaks to us, and the art of life is
+						to get the message.
 					</h5>
 				</GridItem>
 			</GridContainer>

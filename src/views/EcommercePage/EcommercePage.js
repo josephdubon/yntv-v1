@@ -36,6 +36,8 @@ import face7 from 'assets/img/faces/card-profile5-square.jpg'
 import face8 from 'assets/img/faces/card-profile2-square.jpg'
 
 import styles from 'assets/jss/yeshua-network/views/ecommerceStyle.js'
+import { Link } from 'react-router-dom'
+import Favorite from '@material-ui/icons/Favorite'
 
 const useStyles = makeStyles(styles)
 
@@ -150,70 +152,52 @@ export default function EcommercePage () {
 					</GridContainer>
 				</div>
 			</div>
-
 			<Footer
-				theme="dark"
 				content={
 					<div>
 						<div className={classes.left}>
 							<List className={classes.list}>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="http://blog.creative-tim.com/?ref=mkpr-e-ecommerce"
-										target="_blank"
+									<Link
+										to='/'
 										className={classes.block}
 									>
+										Home
+									</Link>
+								</ListItem>
+								<ListItem className={classes.inlineBlock}>
+									<Link
+										to='/about-us'
+										className={classes.block}
+									>
+										About
+									</Link>
+								</ListItem>
+								<ListItem className={classes.inlineBlock}>
+									<Link to='blog-posts' className={classes.block}>
 										Blog
-									</a>
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/presentation?ref=mkpr-e-ecommerce"
-										target="_blank"
+									<Link
+										to='/contact-us'
 										className={classes.block}
 									>
-										Presentation
-									</a>
-								</ListItem>
-								<ListItem className={classes.inlineBlock}>
-									<a
-										href="#pablito"
-										onClick={e => e.preventDefault()}
-										className={classes.block}
-									>
-										Discover
-									</a>
-								</ListItem>
-								<ListItem className={classes.inlineBlock}>
-									<a
-										href="#pablito"
-										onClick={e => e.preventDefault()}
-										className={classes.block}
-									>
-										Payment
-									</a>
-								</ListItem>
-								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/contact-us?ref=mkpr-e-ecommerce"
-										target="_blank"
-										className={classes.block}
-									>
-										Contact us
-									</a>
+										Contact
+									</Link>
 								</ListItem>
 							</List>
 						</div>
 						<div className={classes.right}>
-							Copyright &copy; {1900 + new Date().getYear()}{' '}
+							&copy; {1900 + new Date().getYear()} | made with{' '}
+							<Favorite className={classes.icon}/> by{' '}
 							<a
-								href="https://www.creative-tim.com?ref=mkpr-e-ecommerce"
-								target="_blank"
-								className={classes.aClasses}
+								href='mailto:josephdubon@pm.me'
+								target='_blank'
 							>
-								Creative Tim
+								Yeshua Network
 							</a>{' '}
-							All Rights Reserved.
+							for a better world.
 						</div>
 					</div>
 				}
@@ -222,13 +206,14 @@ export default function EcommercePage () {
 					<GridItem xs={12} sm={4} md={4}>
 						<h5>About Us</h5>
 						<p>
-							Creative Tim is a startup that creates design tools that make the
-							web development process faster and easier.{' '}
+							Welcome to the Yeshua Network we create content and media of all types that inspire, educate
+							and testify of the One True Living Creator (YHWH). We hope you are blessed by our ministry
+							here at the Yeshua Network and that it inspires you
+							to be a blessing in all that you do.
 						</p>
 						<p>
-							We love the web and care deeply for how users interact with a
-							digital product. We power businesses and individuals to create
-							better looking web projects around the world.{' '}
+							Take a look around, enjoy the videos, blogs, pictures, news updates, links, upcoming and
+							past events, and our sponsors’ pages, all of which glorify the King of Kings!
 						</p>
 					</GridItem>
 					<GridItem xs={12} sm={4} md={4}>

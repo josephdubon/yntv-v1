@@ -5,7 +5,6 @@ import classNames from 'classnames'
 import { makeStyles } from '@material-ui/core/styles'
 // @material-ui/icons
 import Gesture from '@material-ui/icons/Gesture'
-import Build from '@material-ui/icons/Build'
 // core components
 import GridContainer from 'components/Grid/GridContainer.js'
 import GridItem from 'components/Grid/GridItem.js'
@@ -21,31 +20,30 @@ export default function SectionServices () {
 		<div className={classes.services}>
 			<GridContainer>
 				<GridItem
-					md={8}
-					sm={8}
+					md={10}
+					sm={10}
 					className={classNames(
 						classes.mlAuto,
 						classes.mrAuto,
 						classes.textCenter
 					)}
 				>
-					<h2 className={classes.title}>We build awesome products</h2>
+					<h2 className={classes.title}>Yeshua is our risen savior!</h2>
 					<h5 className={classes.description}>
-						This is the paragraph where you can write more details about your
-						product. Keep you user engaged by providing meaningful information.
+						Cast all your anxiety on him because he cares for you. For we are God’s workmanship, created in
+						Christ Jesus to do good works, which God prepared in advance for us to do.
 					</h5>
 				</GridItem>
 			</GridContainer>
 			<GridContainer>
-				<GridItem md={4} sm={4}>
+				<GridItem md={6} sm={6} xs={12}>
 					<InfoArea
-						title="1. Design"
+						title="Words of Encouragement"
 						description={
 							<span>
                 <p>
-                  The moment you use Material Kit, you know you’ve never felt
-                  anything like it. With a single use, this powerfull UI Kit
-                  lets you do more than ever before.{' '}
+                  Cast all your anxiety on him because he cares for you. For we are God’s workmanship, created in Christ
+					Jesus to do good works, which God prepared in advance for us to do.
                 </p>
                 <a href="#pablo">Find more...</a>
               </span>
@@ -54,37 +52,83 @@ export default function SectionServices () {
 						iconColor="rose"
 					/>
 				</GridItem>
-				<GridItem md={4} sm={4}>
+				<GridItem md={6} sm={6} xs={12}>
 					<InfoArea
-						title="2. Develop"
+						title="Grounded In Truth"
 						description={
 							<span>
                 <p>
-                  Divide details about your product or agency work into parts.
-                  Write a few lines about each one. A paragraph describing a
-                  feature will be enough.{' '}
+                  Cast all your anxiety on him because he cares for you. For we are God’s workmanship, created in Christ
+					Jesus to do good works, which God prepared in advance for us to do.
                 </p>
                 <a href="#pablo">Find more...</a>
               </span>
 						}
-						icon={Build}
+						icon={Gesture}
 						iconColor="rose"
 					/>
 				</GridItem>
-				<GridItem md={4} sm={4}>
+				<GridItem md={6} sm={6} xs={12}>
 					<InfoArea
-						title="3. Make Edits"
+						title="Bring Heaven To Earth"
 						description={
 							<span>
                 <p>
-                  Divide details about your product or agency work into parts.
-                  Write a few lines about each one. A paragraph describing a
-                  feature will be enough.{' '}
+                  Cast all your anxiety on him because he cares for you. For we are God’s workmanship, created in Christ
+					Jesus to do good works, which God prepared in advance for us to do.
                 </p>
                 <a href="#pablo">Find more...</a>
               </span>
 						}
-						icon="mode_edit"
+						icon={Gesture}
+						iconColor="rose"
+					/>
+				</GridItem>
+				<GridItem md={6} sm={6} xs={12}>
+					<InfoArea
+						title="Yeshua Gear"
+						description={
+							<span>
+                 <p>
+                  Cast all your anxiety on him because he cares for you. For we are God’s workmanship, created in Christ
+					Jesus to do good works, which God prepared in advance for us to do.
+                </p>
+                <a href="#pablo">Find more...</a>
+              </span>
+						}
+						icon={Gesture}
+						iconColor="rose"
+					/>
+				</GridItem>
+				<GridItem md={6} sm={6} xs={12}>
+					<InfoArea
+						title="Be The Light"
+						description={
+							<span>
+                <p>
+                  Cast all your anxiety on him because he cares for you. For we are God’s workmanship, created in Christ
+					Jesus to do good works, which God prepared in advance for us to do.
+                </p>
+                <a href="#pablo">Find more...</a>
+              </span>
+						}
+						icon={Gesture}
+						iconColor="rose"
+					/>
+				</GridItem>
+				<GridItem md={6} sm={6} xs={12}>
+					<InfoArea
+						title="Audio Files"
+						description={
+							<span>
+                <p>
+                  Cast all your anxiety on him because he cares for you. For we are God’s workmanship, created in Christ
+					Jesus to do good works, which God prepared in advance for us to do.
+                </p>
+                <a href="#pablo">Find more...</a>
+              </span>
+						}
+						icon={Gesture}
 						iconColor="rose"
 					/>
 				</GridItem>

@@ -38,7 +38,7 @@ export default function SectionCommunityBanner () {
 					(John 8:32)
 				</p>
 				<Button simple color="white">
-					<Subject/> Read Article
+					<Subject/> Sign Up
 				</Button>
 				<Button simple color="white">
 					<WatchLater/> Watch Video

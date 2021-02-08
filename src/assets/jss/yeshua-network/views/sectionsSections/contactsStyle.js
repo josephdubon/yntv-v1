@@ -23,6 +23,7 @@ const contactsSection = {
 	section: {
 		...sectionDark,
 		...section,
+		borderRadius: '6px',
 		position: 'relative',
 		'& $container': {
 			zIndex: '2',
@@ -37,7 +38,8 @@ const contactsSection = {
 			left: '0',
 			top: '0',
 			content: '\'\'',
-			backgroundColor: 'rgba(' + hexToRgb(blackColor) + ', 0.7)',
+			backgroundColor: 'rgba(' + hexToRgb(blackColor) + ', 0.8)',
+			borderRadius: '6px',
 		},
 		'& $title': {
 			color: whiteColor,

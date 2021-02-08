@@ -12,6 +12,9 @@ import Button from 'components/CustomButtons/Button.js'
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles'
 
+import FacebookIcon from '@material-ui/icons/Facebook'
+import TwitterIcon from '@material-ui/icons/Twitter'
+
 import teamStyle from 'assets/jss/yeshua-network/views/aboutUsSections/teamStyle.js'
 
 import FaceMarc from 'assets/img/faces/marc.jpg'
@@ -27,23 +30,24 @@ export default function SectionTeam () {
 		<div className={classes.team}>
 			<GridContainer>
 				<GridItem
-					md={8}
-					sm={8}
+					md={10}
+					sm={10}
 					className={classNames(
 						classes.mrAuto,
 						classes.mlAuto,
 						classes.textCenter
 					)}
 				>
-					<h2 className={classes.title}>We are nerd rockstars</h2>
+					<h3 className={classes.title}>Together We Change The World</h3>
 					<h5 className={classes.description}>
-						This is the paragraph where you can write more details about your
-						team. Keep you user engaged by providing meaningful information.
+						The Yeshua Network was created by Nathan Wheeler under the Facebook page “YeshuaOfficial” on
+						April 13th, 2014. Fulfilling a prophecy that was spoken over him by the Lord during his NDE in
+						2013.
 					</h5>
 				</GridItem>
 			</GridContainer>
 			<GridContainer>
-				<GridItem md={3} sm={3}>
+				<GridItem md={3} sm={6}>
 					<Card profile plain>
 						<CardAvatar profile plain>
 							<a href="#pablo">
@@ -51,11 +55,11 @@ export default function SectionTeam () {
 							</a>
 						</CardAvatar>
 						<CardBody plain>
-							<h4 className={classes.cardTitle}>Alec Thompson</h4>
-							<h6 className={classes.textMuted}>CEO / Co-Founder</h6>
+							<h4 className={classes.cardTitle}>Nathan Wheeler</h4>
+							<h6 className={classes.textMuted}>Founder/Owner</h6>
 							<p className={classes.cardDescription}>
-								And I love you like Kanye loves Kanye. We need to restart the
-								human foundation.
+								As followers of Yeshua, we receive our greatest blessings when we ourselves are the
+								blessing onto another.
 							</p>
 						</CardBody>
 						<CardFooter className={classes.justifyContent}>
@@ -63,15 +67,15 @@ export default function SectionTeam () {
 								<i className="fab fa-twitter"/>
 							</Button>
 							<Button href="#pablo" justIcon simple color="facebook">
-								<i className="fab fa-facebook"/>
+								<FacebookIcon/>
 							</Button>
-							<Button href="#pablo" justIcon simple color="google">
-								<i className="fab fa-google"/>
+							<Button href="#pablo" justIcon simple color="twitter">
+								<TwitterIcon/>
 							</Button>
 						</CardFooter>
 					</Card>
 				</GridItem>
-				<GridItem md={3} sm={3}>
+				<GridItem md={3} sm={6}>
 					<Card profile plain>
 						<CardAvatar profile plain>
 							<a href="#pablo">
@@ -83,27 +87,27 @@ export default function SectionTeam () {
 							</a>
 						</CardAvatar>
 						<CardBody plain>
-							<h4 className={classes.cardTitle}>Tania Andrew</h4>
-							<h6 className={classes.textMuted}>DESIGNER</h6>
+							<h4 className={classes.cardTitle}>Brian Layne</h4>
+							<h6 className={classes.textMuted}>Director of Content</h6>
 							<p className={classes.cardDescription}>
-								Don{'\''}t be scared of the truth because we need to restart the
-								human foundation. And I love you like Kanye loves Kanye.
+								As followers of Yeshua, we receive our greatest blessings when we ourselves are the
+								blessing onto another.
 							</p>
 						</CardBody>
 						<CardFooter className={classes.justifyContent}>
 							<Button href="#pablo" justIcon simple color="twitter">
 								<i className="fab fa-twitter"/>
 							</Button>
-							<Button href="#pablo" justIcon simple color="dribbble">
-								<i className="fab fa-dribbble"/>
+							<Button href="#pablo" justIcon simple color="facebook">
+								<FacebookIcon/>
 							</Button>
-							<Button href="#pablo" justIcon simple color="linkedin">
-								<i className="fab fa-linkedin-in"/>
+							<Button href="#pablo" justIcon simple color="twitter">
+								<TwitterIcon/>
 							</Button>
 						</CardFooter>
 					</Card>
 				</GridItem>
-				<GridItem md={3} sm={3}>
+				<GridItem md={3} sm={6}>
 					<Card profile plain>
 						<CardAvatar profile plain>
 							<a href="#pablo">
@@ -115,24 +119,27 @@ export default function SectionTeam () {
 							</a>
 						</CardAvatar>
 						<CardBody plain>
-							<h4 className={classes.cardTitle}>Christian Mike</h4>
-							<h6 className={classes.textMuted}>Web Developer</h6>
+							<h4 className={classes.cardTitle}>Alex Lvovsky</h4>
+							<h6 className={classes.textMuted}>Content Creator</h6>
 							<p className={classes.cardDescription}>
-								I love you like Kanye loves Kanye. Don{'\''}t be scared of the
-								truth because we need to restart the human foundation.
+								As followers of Yeshua, we receive our greatest blessings when we ourselves are the
+								blessing onto another.
 							</p>
 						</CardBody>
 						<CardFooter className={classes.justifyContent}>
-							<Button href="#pablo" justIcon simple color="facebook">
-								<i className="fab fa-facebook"/>
+							<Button href="#pablo" justIcon simple color="twitter">
+								<i className="fab fa-twitter"/>
 							</Button>
-							<Button href="#pablo" justIcon simple color="dribbble">
-								<i className="fab fa-dribbble"/>
+							<Button href="#pablo" justIcon simple color="facebook">
+								<FacebookIcon/>
+							</Button>
+							<Button href="#pablo" justIcon simple color="twitter">
+								<TwitterIcon/>
 							</Button>
 						</CardFooter>
 					</Card>
 				</GridItem>
-				<GridItem md={3} sm={3}>
+				<GridItem md={3} sm={6}>
 					<Card profile plain>
 						<CardAvatar profile plain>
 							<a href="#pablo">
@@ -144,22 +151,22 @@ export default function SectionTeam () {
 							</a>
 						</CardAvatar>
 						<CardBody plain>
-							<h4 className={classes.cardTitle}>Rebecca Stormvile</h4>
-							<h6 className={classes.textMuted}>WEB DEVELOPER</h6>
+							<h4 className={classes.cardTitle}>Michael Beam</h4>
+							<h6 className={classes.textMuted}>Church Overseer</h6>
 							<p className={classes.cardDescription}>
-								And I love you like Kanye loves Kanye. We really need to restart
-								the human foundation.
+								As followers of Yeshua, we receive our greatest blessings when we ourselves are the
+								blessing onto another.
 							</p>
 						</CardBody>
 						<CardFooter className={classes.justifyContent}>
-							<Button href="#pablo" justIcon simple color="google">
-								<i className="fab fa-google"/>
-							</Button>
 							<Button href="#pablo" justIcon simple color="twitter">
 								<i className="fab fa-twitter"/>
 							</Button>
-							<Button href="#pablo" justIcon simple color="dribbble">
-								<i className="fab fa-dribbble"/>
+							<Button href="#pablo" justIcon simple color="facebook">
+								<FacebookIcon/>
+							</Button>
+							<Button href="#pablo" justIcon simple color="twitter">
+								<TwitterIcon/>
 							</Button>
 						</CardFooter>
 					</Card>

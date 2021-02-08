@@ -30,6 +30,7 @@ import shoppingCartStyle from 'assets/jss/yeshua-network/views/shoppingCartStyle
 import product1 from 'assets/img/product1.jpg'
 import product2 from 'assets/img/product2.jpg'
 import product3 from 'assets/img/product3.jpg'
+import { Link } from 'react-router-dom'
 
 const useStyles = makeStyles(shoppingCartStyle)
 
@@ -293,58 +294,52 @@ export default function ShoppingCartPage () {
 				</div>
 			</div>
 			<Footer
+				className={classes.footer}
 				content={
 					<div>
 						<div className={classes.left}>
 							<List className={classes.list}>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/?ref=mkpr-shopping-cart"
-										target="_blank"
+									<Link
+										to='/'
 										className={classes.block}
 									>
-										Creative Tim
-									</a>
+										Home
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/presentation?ref=mkpr-shopping-cart"
-										target="_blank"
+									<Link
+										to='/about-us'
 										className={classes.block}
 									>
-										About us
-									</a>
+										About
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://blog.creative-tim.com/?ref=mkpr-shopping-cart"
-										target="_blank"
-										className={classes.block}
-									>
+									<Link to='blog-posts' className={classes.block}>
 										Blog
-									</a>
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/license?ref=mkpr-shopping-cart"
-										target="_blank"
+									<Link
+										to='/contact-us'
 										className={classes.block}
 									>
-										Licenses
-									</a>
+										Contact
+									</Link>
 								</ListItem>
 							</List>
 						</div>
 						<div className={classes.right}>
-							&copy; {1900 + new Date().getYear()} , made with{' '}
+							&copy; {1900 + new Date().getYear()} | made with{' '}
 							<Favorite className={classes.icon}/> by{' '}
 							<a
-								href="https://www.creative-tim.com?ref=mkpr-shopping-cart"
-								target="_blank"
+								href='mailto:josephdubon@pm.me'
+								target='_blank'
 							>
-								Creative Tim
+								Yeshua Network
 							</a>{' '}
-							for a better web.
+							for a better world.
 						</div>
 					</div>
 				}

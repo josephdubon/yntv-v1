@@ -1,4 +1,5 @@
-import { container, description, grayColor, title, } from 'assets/jss/yeshua-network'
+import { container, description, title, whiteColor, } from 'assets/jss/yeshua-network'
+import React from 'react'
 
 const sectionSubscribeLineStyle = {
 	container,
@@ -6,12 +7,13 @@ const sectionSubscribeLineStyle = {
 	description,
 	section: {
 		padding: '1.875rem 0',
+		borderRadius: '6px',
 	},
 	cardClasses: {
 		marginTop: '30px',
 	},
 	icon: {
-		color: grayColor[13],
+		color: whiteColor,
 	},
 	formControl: {
 		paddingTop: '0px !important',

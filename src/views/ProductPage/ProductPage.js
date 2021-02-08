@@ -43,6 +43,7 @@ import product1 from 'assets/img/examples/product1.jpg'
 import product2 from 'assets/img/examples/product2.jpg'
 import product3 from 'assets/img/examples/product3.jpg'
 import product4 from 'assets/img/examples/product4.jpg'
+import { Link } from 'react-router-dom'
 
 const useStyles = makeStyles(productStyle)
 
@@ -480,55 +481,52 @@ export default function ProductPage () {
 				</div>
 			</div>
 			<Footer
+				className={classes.footer}
 				content={
 					<div>
 						<div className={classes.left}>
 							<List className={classes.list}>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/?ref=mkpr-pricing"
-										target="_blank"
+									<Link
+										to='/'
 										className={classes.block}
 									>
-										Creative Tim
-									</a>
+										Home
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/presentation?ref=mkpr-pricing"
-										target="_blank"
+									<Link
+										to='/about-us'
 										className={classes.block}
 									>
-										About us
-									</a>
+										About
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a href="//blog.creative-tim.com/" className={classes.block}>
+									<Link to='blog-posts' className={classes.block}>
 										Blog
-									</a>
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/license?ref=mkpr-pricing"
-										target="_blank"
+									<Link
+										to='/contact-us'
 										className={classes.block}
 									>
-										Licenses
-									</a>
+										Contact
+									</Link>
 								</ListItem>
 							</List>
 						</div>
 						<div className={classes.right}>
-							&copy; {1900 + new Date().getYear()} , made with{' '}
+							&copy; {1900 + new Date().getYear()} | made with{' '}
 							<Favorite className={classes.icon}/> by{' '}
 							<a
-								href="https://www.creative-tim.com?ref=mkpr-pricing"
-								target="_blank"
-								className={classes.aClasses}
+								href='mailto:josephdubon@pm.me'
+								target='_blank'
 							>
-								Creative Tim
+								Yeshua Network
 							</a>{' '}
-							for a better web.
+							for a better world.
 						</div>
 					</div>
 				}

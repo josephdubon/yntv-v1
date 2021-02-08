@@ -2,7 +2,6 @@ import React from 'react'
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles'
 // @material-ui/icons
-import TrendingUp from '@material-ui/icons/TrendingUp'
 // core components
 import GridContainer from 'components/Grid/GridContainer.js'
 import GridItem from 'components/Grid/GridItem.js'
@@ -50,13 +49,12 @@ export default function SectionInterested () {
 							</Info>
 							<h4 className={classes.cardTitle}>
 								<a href="#pablo">
-									Autodesk looks to future of 3D printing with Project Escher
+									He Puts His Peace in Our Hearts
 								</a>
 							</h4>
 							<p className={classes.description}>
-								Like so many organizations these days, Autodesk is a company in
-								transition. It was until recently a traditional boxed software
-								company selling licenses.
+								Don't be scared of the truth because we need to restart the human foundation in truth
+								And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
 								<a href="#pablo"> Read More </a>
 							</p>
 						</CardBody>
@@ -82,13 +80,12 @@ export default function SectionInterested () {
 							</Success>
 							<h4 className={classes.cardTitle}>
 								<a href="#pablo">
-									Lyft launching cross-platform service this week
+									God Is Always Listening
 								</a>
 							</h4>
 							<p className={classes.description}>
-								Like so many organizations these days, Autodesk is a company in
-								transition. It was until recently a traditional boxed software
-								company selling licenses.
+								Don't be scared of the truth because we need to restart the human foundation in truth
+								And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
 								<a href="#pablo"> Read More </a>
 							</p>
 						</CardBody>
@@ -111,18 +108,112 @@ export default function SectionInterested () {
 						<CardBody plain>
 							<Danger>
 								<h6>
-									<TrendingUp/> ENTERPRISE
+									ENTERPRISE
 								</h6>
 							</Danger>
 							<h4 className={classes.cardTitle}>
 								<a href="#pablo">
-									6 insights into the French Fashion landscape
+									Darkness cannot put out the Light
 								</a>
 							</h4>
 							<p className={classes.description}>
-								Like so many organizations these days, Autodesk is a company in
-								transition. It was until recently a traditional boxed software
-								company selling licenses.
+								Don't be scared of the truth because we need to restart the human foundation in truth
+								And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+								<a href="#pablo"> Read More </a>
+							</p>
+						</CardBody>
+					</Card>
+				</GridItem>
+				<GridItem xs={12} sm={4} md={4} lg={4} xl={4}>
+					<Card plain blog>
+						<CardHeader plain image>
+							<a href="#pablo">
+								<img src={blog6} alt="..."/>
+							</a>
+							<div
+								className={classes.coloredShadow}
+								style={{
+									backgroundImage: 'url(' + blog6 + ')',
+									opacity: '1'
+								}}
+							/>
+						</CardHeader>
+						<CardBody plain>
+							<Success>
+								<h6>STARTUPS</h6>
+							</Success>
+							<h4 className={classes.cardTitle}>
+								<a href="#pablo">
+									His Kingdom is Heaven
+								</a>
+							</h4>
+							<p className={classes.description}>
+								Don't be scared of the truth because we need to restart the human foundation in truth
+								And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+								<a href="#pablo"> Read More </a>
+							</p>
+						</CardBody>
+					</Card>
+				</GridItem>
+				<GridItem xs={12} sm={4} md={4} lg={4} xl={4}>
+					<Card plain blog>
+						<CardHeader plain image>
+							<a href="#pablo">
+								<img src={blog6} alt="..."/>
+							</a>
+							<div
+								className={classes.coloredShadow}
+								style={{
+									backgroundImage: 'url(' + blog6 + ')',
+									opacity: '1'
+								}}
+							/>
+						</CardHeader>
+						<CardBody plain>
+							<Info>
+								<h6>ENTERPRISE</h6>
+							</Info>
+							<h4 className={classes.cardTitle}>
+								<a href="#pablo">
+									Life Is A Journey
+								</a>
+							</h4>
+							<p className={classes.description}>
+								Don't be scared of the truth because we need to restart the human foundation in truth
+								And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+								<a href="#pablo"> Read More </a>
+							</p>
+						</CardBody>
+					</Card>
+				</GridItem>
+				<GridItem xs={12} sm={4} md={4} lg={4} xl={4}>
+					<Card plain blog>
+						<CardHeader plain image>
+							<a href="#pablo">
+								<img src={blog6} alt="..."/>
+							</a>
+							<div
+								className={classes.coloredShadow}
+								style={{
+									backgroundImage: 'url(' + blog6 + ')',
+									opacity: '1'
+								}}
+							/>
+						</CardHeader>
+						<CardBody plain>
+							<Danger>
+								<h6>
+									ENTERPRISE
+								</h6>
+							</Danger>
+							<h4 className={classes.cardTitle}>
+								<a href="#pablo">
+									Faith Can Move Mountains
+								</a>
+							</h4>
+							<p className={classes.description}>
+								Don't be scared of the truth because we need to restart the human foundation in truth
+								And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
 								<a href="#pablo"> Read More </a>
 							</p>
 						</CardBody>

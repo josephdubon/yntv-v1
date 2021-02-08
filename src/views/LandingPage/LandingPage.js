@@ -21,10 +21,11 @@ import landingPageStyle from 'assets/jss/yeshua-network/views/landingPageStyle.j
 // Sections for this page
 import SectionIntro from './Sections/SectionIntro.js'
 import SectionCurrentMinistries from './Sections/SectionCurrentMinistries.js'
-import SectionPrayerForm from './Sections/SectionPrayerForm.js'
+import SectionContactForm from './Sections/SectionContactForm'
 import SectionCommunityBanner from './Sections/SectionCommunityBanner'
 import SectionTestimonial from './Sections/SectionTestimonials'
 import SectionLatestVideos from './Sections/SectionLatestVideos'
+import SectionNewsletter from './Sections/SectionNewsletter'
 
 // @material-ui/core components
 import GridContainer from '../../components/Grid/GridContainer'
@@ -38,6 +39,9 @@ import Carousel from 'react-slick'
 import dg1 from '../../assets/img/dg1.jpg'
 import dg2 from '../../assets/img/dg2.jpg'
 import dg3 from '../../assets/img/dg3.jpg'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import { Link } from 'react-router-dom'
 
 const useStyles = makeStyles(landingPageStyle)
 
@@ -199,21 +203,57 @@ export default function LandingPage ({ ...rest }) {
 					<SectionCurrentMinistries/>
 					<SectionTestimonial/>
 					<SectionLatestVideos/>
-					<SectionPrayerForm/>
+					<SectionContactForm/>
+					<SectionNewsletter/>
 				</div>
 			</div>
 			<Footer
 				content={
-					<div className={classes.right}>
-						&copy; {1900 + new Date().getYear()} | made with{' '}
-						<Favorite className={classes.icon}/> by{' '}
-						<a
-							href='mailto:josephdubon@pm.me'
-							target='_blank'
-						>
-							Yeshua Network
-						</a>{' '}
-						for a better world.
+					<div>
+						<div className={classes.left}>
+							<List className={classes.list}>
+								<ListItem className={classes.inlineBlock}>
+									<Link
+										to='/'
+										className={classes.block}
+									>
+										Home
+									</Link>
+								</ListItem>
+								<ListItem className={classes.inlineBlock}>
+									<Link
+										to='/about-us'
+										className={classes.block}
+									>
+										About
+									</Link>
+								</ListItem>
+								<ListItem className={classes.inlineBlock}>
+									<Link to='blog-posts' className={classes.block}>
+										Blog
+									</Link>
+								</ListItem>
+								<ListItem className={classes.inlineBlock}>
+									<Link
+										to='/contact-us'
+										className={classes.block}
+									>
+										Contact
+									</Link>
+								</ListItem>
+							</List>
+						</div>
+						<div className={classes.right}>
+							&copy; {1900 + new Date().getYear()} | made with{' '}
+							<Favorite className={classes.icon}/> by{' '}
+							<a
+								href='mailto:josephdubon@pm.me'
+								target='_blank'
+							>
+								Yeshua Network
+							</a>{' '}
+							for a better world.
+						</div>
 					</div>
 				}
 			/>

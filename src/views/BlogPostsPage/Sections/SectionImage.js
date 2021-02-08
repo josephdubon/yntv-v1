@@ -11,11 +11,14 @@ import CardBody from 'components/Card/CardBody.js'
 import CardFooter from 'components/Card/CardFooter.js'
 import Muted from 'components/Typography/Muted.js'
 import Button from 'components/CustomButtons/Button.js'
+// icons @material-ui
+import TwitterIcon from '@material-ui/icons/Twitter'
+import FacebookIcon from '@material-ui/icons/Facebook'
+import InstagramIcon from '@material-ui/icons/Instagram'
 
 import bg10 from 'assets/img/bg10.jpg'
 
 import cardProfile1 from 'assets/img/faces/card-profile1-square.jpg'
-import cardProfile4 from 'assets/img/faces/card-profile4-square.jpg'
 
 import sectionImageStyle from 'assets/jss/yeshua-network/views/blogPostsSections/sectionImageStyle.js'
 
@@ -42,9 +45,9 @@ export default function SectionImage () {
 								</GridItem>
 								<GridItem xs={12} sm={7} md={7}>
 									<CardBody plain>
-										<h4 className={classes.cardTitle}>Alec Thompson</h4>
+										<h4 className={classes.cardTitle}>Nathan Wheeler</h4>
 										<Muted>
-											<h6>AUTHOR OF THE MONTH</h6>
+											<h6>Founder of Yeshua Network</h6>
 										</Muted>
 										<p className={classes.description}>
 											Don{'\''}t be scared of the truth because we need to
@@ -53,13 +56,13 @@ export default function SectionImage () {
 									</CardBody>
 									<CardFooter profile plain>
 										<Button justIcon simple color="white" href="#pablo">
-											<i className="fab fa-twitter"/>
+											<TwitterIcon/>
 										</Button>
 										<Button justIcon simple color="white" href="#pablo">
-											<i className="fab fa-facebook-square"/>
+											<FacebookIcon/>
 										</Button>
 										<Button justIcon simple color="white" href="#pablo">
-											<i className="fab fa-google"/>
+											<InstagramIcon/>
 										</Button>
 									</CardFooter>
 								</GridItem>
@@ -72,15 +75,15 @@ export default function SectionImage () {
 								<GridItem xs={12} sm={5} md={5}>
 									<CardHeader image plain>
 										<a href="#pablo">
-											<img src={cardProfile4} alt="..."/>
+											<img src={cardProfile1} alt="..."/>
 										</a>
 									</CardHeader>
 								</GridItem>
 								<GridItem xs={12} sm={7} md={7}>
 									<CardBody plain>
-										<h4 className={classes.cardTitle}>Kendall Andrew</h4>
+										<h4 className={classes.cardTitle}>Nathan Wheeler</h4>
 										<Muted>
-											<h6>AUTHOR OF THE WEEK</h6>
+											<h6>Founder of Yeshua Network</h6>
 										</Muted>
 										<p className={classes.description}>
 											Don{'\''}t be scared of the truth because we need to
@@ -89,16 +92,13 @@ export default function SectionImage () {
 									</CardBody>
 									<CardFooter profile plain>
 										<Button justIcon simple color="white" href="#pablo">
-											<i className="fab fa-linkedin-in"/>
+											<TwitterIcon/>
 										</Button>
 										<Button justIcon simple color="white" href="#pablo">
-											<i className="fab fa-facebook-square"/>
+											<FacebookIcon/>
 										</Button>
 										<Button justIcon simple color="white" href="#pablo">
-											<i className="fab fa-dribbble"/>
-										</Button>
-										<Button justIcon simple color="white" href="#pablo">
-											<i className="fab fa-google"/>
+											<InstagramIcon/>
 										</Button>
 									</CardFooter>
 								</GridItem>

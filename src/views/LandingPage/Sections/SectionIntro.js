@@ -29,9 +29,8 @@ export default function SectionIntro () {
 						network because, like all of creation, everything here points towards Him.
 						<br/><br/>
 						Take a look around, enjoy the videos, blogs, pictures, news updates, links, upcoming and past
-						events, and our sponsors’ pages!
-						<br/><br/>
-						We hope you are blessed by our ministry here at the Yeshua Network and that it inspires you to
+						events, and our sponsors’ pages! We hope you are blessed by our ministry here at the Yeshua
+						Network and that it inspires you to
 						be a blessing in all that you do.
 					</h5>
 				</GridItem>

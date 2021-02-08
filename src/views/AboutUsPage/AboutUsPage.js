@@ -20,7 +20,8 @@ import SectionDescription from 'views/AboutUsPage/Sections/SectionDescription.js
 import SectionTeam from 'views/AboutUsPage/Sections/SectionTeam.js'
 import SectionServices from 'views/AboutUsPage/Sections/SectionServices.js'
 import SectionOffice from 'views/AboutUsPage/Sections/SectionOffice.js'
-import SectionContact from 'views/AboutUsPage/Sections/SectionContact.js'
+import SectionMailingList from 'views/AboutUsPage/Sections/SectionMailingList.js'
+import SectionNewsletter from 'views/AboutUsPage/Sections/SectionNewsletter.js'
 
 import aboutUsStyle from 'assets/jss/yeshua-network/views/aboutUsStyle.js'
 import { Link } from 'react-router-dom'
@@ -49,8 +50,8 @@ export default function AboutUsPage () {
 				<div className={classes.container}>
 					<GridContainer justify="center">
 						<GridItem
-							md={8}
-							sm={8}
+							md={10}
+							sm={10}
 							className={classNames(
 								classes.mlAuto,
 								classes.mrAuto,
@@ -59,8 +60,7 @@ export default function AboutUsPage () {
 						>
 							<h1 className={classes.title}>About Us</h1>
 							<h4>
-								Meet the amazing team behind this project and find out more
-								about how we work.
+								Come get to know us. Meet the amazing team that run Yeshua Network.
 							</h4>
 						</GridItem>
 					</GridContainer>
@@ -71,8 +71,9 @@ export default function AboutUsPage () {
 					<SectionDescription/>
 					<SectionTeam/>
 					<SectionServices/>
+					<SectionMailingList/>
 					<SectionOffice/>
-					<SectionContact/>
+					<SectionNewsletter/>
 				</div>
 			</div>
 			<Footer

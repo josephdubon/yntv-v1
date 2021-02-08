@@ -24,16 +24,17 @@ export default function SectionOffice () {
 		<div className={classes.office}>
 			<GridContainer className={classes.textCenter}>
 				<GridItem
-					md={8}
-					sm={8}
+					md={10}
+					sm={10}
+					xs={12}
 					className={classNames(classes.mrAuto, classes.mlAuto)}
 				>
-					<h2 className={classes.title}>Our office is our second home</h2>
-					<h4 className={classes.description}>
-						Here are some pictures from our office. You can see the place looks
-						like a palace and is fully equiped with everything you need to get
-						the job done.
-					</h4>
+					<h3 className={classes.title}>Some Photos From The Road</h3>
+					<h5 className={classes.description}>
+						Cast all your anxiety on him because he cares for you. For we are God’s workmanship, created in
+						Christ Jesus to do good works, which God prepared in advance for us to do. No temptation has
+						seized you except what is common to man.
+					</h5>
 				</GridItem>
 			</GridContainer>
 			<GridContainer>

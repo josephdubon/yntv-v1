@@ -14,7 +14,7 @@ const productStyle = {
 	},
 	description: {
 		color: grayColor[0],
-		textAlign: 'justify',
+		textAlign: 'center',
 	},
 }
 

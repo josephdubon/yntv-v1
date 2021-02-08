@@ -11,7 +11,9 @@ const blogPostsPageStyle = {
 	},
 	title: {
 		...title,
-		color: whiteColor,
+		'&, & + h4': {
+			color: whiteColor,
+		},
 	},
 	main: {
 		...main,

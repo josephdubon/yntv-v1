@@ -10,20 +10,20 @@ import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 // @material-ui/icons
 import Favorite from '@material-ui/icons/Favorite'
-import PinDrop from '@material-ui/icons/PinDrop'
-import Phone from '@material-ui/icons/Phone'
-import BusinessCenter from '@material-ui/icons/BusinessCenter'
 // core components
 import Header from 'components/Header/Header.js'
 import HeaderLinks from 'components/Header/HeaderLinks.js'
-import GridContainer from 'components/Grid/GridContainer.js'
-import GridItem from 'components/Grid/GridItem.js'
-import InfoArea from 'components/InfoArea/InfoArea.js'
-import CustomInput from 'components/CustomInput/CustomInput.js'
-import Button from 'components/CustomButtons/Button.js'
 import Footer from 'components/Footer/Footer.js'
 
+// Sections for this page
+import SectionNewsletter from './Sections/SectionNewsletter'
+import SectionContactForm from './Sections/SectionContactForm'
+
 import contactUsStyle from 'assets/jss/yeshua-network/views/contactUsStyle.js'
+import { Link } from 'react-router-dom'
+import GridContainer from '../../components/Grid/GridContainer'
+import GridItem from '../../components/Grid/GridItem'
+import Parallax from '../../components/Parallax/Parallax'
 
 const CustomSkinMap = withScriptjs(
 	withGoogleMap(() => (
@@ -112,117 +112,41 @@ export default function ContactUsPage () {
 		<div>
 			<Header
 				brand="Yeshua Network"
-				links={<HeaderLinks dropdownHoverColor="dark"/>}
+				links={<HeaderLinks dropdownHoverColor="info"/>}
 				fixed
-				color="dark"
+				color="transparent"
+				changeColorOnScroll={{
+					height: 300,
+					color: 'info'
+				}}
 			/>
-			<div className={classes.bigMap}>
-				<CustomSkinMap
-					googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
-					loadingElement={<div style={{ height: `100%` }}/>}
-					containerElement={
-						<div
-							style={{
-								height: `100%`,
-								borderRadius: '6px',
-								overflow: 'hidden'
-							}}
-						/>
-					}
-					mapElement={<div style={{ height: `100%` }}/>}
-				/>
-			</div>
+
+			<Parallax image={require('assets/img/bg9.jpg')} filter="dark" small>
+				<div className={classes.container}>
+					<GridContainer justify="center">
+						<GridItem
+							md={12}
+							sm={12}
+							className={classNames(
+								classes.mlAuto,
+								classes.mrAuto,
+								classes.textCenter
+							)}
+						>
+							<h1 className={classes.title}>Contact Us</h1>
+							<h4>
+								For prayer request, site suggestions, or professional inquiries please use the form
+								below.
+							</h4>
+						</GridItem>
+					</GridContainer>
+				</div>
+			</Parallax>
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div className={classes.contactContent}>
 					<div className={classes.container}>
-						<h2 className={classes.title}>Send us a message</h2>
-						<GridContainer>
-							<GridItem md={6} sm={6}>
-								<p>
-									You can contact us with anything related to our Products. We
-									{'\''}ll get in touch with you as soon as possible.
-									<br/>
-									<br/>
-								</p>
-								<form>
-									<CustomInput
-										labelText="Your Name"
-										id="float"
-										formControlProps={{
-											fullWidth: true
-										}}
-									/>
-									<CustomInput
-										labelText="Email address"
-										id="float"
-										formControlProps={{
-											fullWidth: true
-										}}
-									/>
-									<CustomInput
-										labelText="Phone"
-										id="float"
-										formControlProps={{
-											fullWidth: true
-										}}
-									/>
-									<CustomInput
-										labelText="Your message"
-										id="float"
-										formControlProps={{
-											fullWidth: true
-										}}
-										inputProps={{
-											multiline: true,
-											rows: 6
-										}}
-									/>
-									<div className={classes.textCenter}>
-										<Button color="primary" round>
-											Contact us
-										</Button>
-									</div>
-								</form>
-							</GridItem>
-							<GridItem md={4} sm={4} className={classes.mlAuto}>
-								<InfoArea
-									className={classes.info}
-									title="Find us at the office"
-									description={
-										<p>
-											Bld Mihail Kogalniceanu, nr. 8, <br/> 7652 Bucharest,{' '}
-											<br/> Romania
-										</p>
-									}
-									icon={PinDrop}
-									iconColor="primary"
-								/>
-								<InfoArea
-									className={classes.info}
-									title="Give us a ring"
-									description={
-										<p>
-											Michael Jordan <br/> +40 762 321 762 <br/> Mon - Fri,
-											8:00-22:00
-										</p>
-									}
-									icon={Phone}
-									iconColor="primary"
-								/>
-								<InfoArea
-									className={classes.info}
-									title="Legal Information"
-									description={
-										<p>
-											Creative Tim Ltd. <br/> VAT · EN2341241 <br/> IBAN ·
-											EN8732ENGB2300099123 <br/> Bank · Great Britain Bank
-										</p>
-									}
-									icon={BusinessCenter}
-									iconColor="primary"
-								/>
-							</GridItem>
-						</GridContainer>
+						<SectionNewsletter/>
+						<SectionContactForm/>
 					</div>
 				</div>
 			</div>
@@ -232,49 +156,46 @@ export default function ContactUsPage () {
 						<div className={classes.left}>
 							<List className={classes.list}>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/?ref=mkpr-contact-us"
-										target="_blank"
+									<Link
+										to='/'
 										className={classes.block}
 									>
-										Creative Tim
-									</a>
+										Home
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/presentation?ref=mkpr-contact-us"
-										target="_blank"
+									<Link
+										to='/about-us'
 										className={classes.block}
 									>
-										About us
-									</a>
+										About
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a href="//blog.creative-tim.com/" className={classes.block}>
+									<Link to='blog-posts' className={classes.block}>
 										Blog
-									</a>
+									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<a
-										href="https://www.creative-tim.com/license?ref=mkpr-contact-us"
-										target="_blank"
+									<Link
+										to='/contact-us'
 										className={classes.block}
 									>
-										Licenses
-									</a>
+										Contact
+									</Link>
 								</ListItem>
 							</List>
 						</div>
 						<div className={classes.right}>
-							&copy; {1900 + new Date().getYear()} , made with{' '}
+							&copy; {1900 + new Date().getYear()} | made with{' '}
 							<Favorite className={classes.icon}/> by{' '}
 							<a
-								href="https://www.creative-tim.com?ref=mkpr-contact-us"
-								target="_blank"
+								href='mailto:josephdubon@pm.me'
+								target='_blank'
 							>
-								Creative Tim
+								Yeshua Network
 							</a>{' '}
-							for a better web.
+							for a better world.
 						</div>
 					</div>
 				}

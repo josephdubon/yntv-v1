@@ -65,7 +65,7 @@ export default function SectionPills () {
 							<h6 className={classes.category}>WORLDS</h6>
 							<a href="#pablo">
 								<h3 className={classes.cardTitle}>
-									The Best Productivity Apps on Market
+									Inner Peace, How To Find It
 								</h3>
 							</a>
 							<p className={classes.category}>
@@ -89,7 +89,7 @@ export default function SectionPills () {
 							<h6 className={classes.category}>BUSINESS</h6>
 							<a href="#pablo">
 								<h3 className={classes.cardTitle}>
-									Working on Wallstreet is Not So Easy
+									God Loves Each One of Us
 								</h3>
 							</a>
 							<p className={classes.category}>
@@ -113,7 +113,7 @@ export default function SectionPills () {
 							<h6 className={classes.category}>MARKETING</h6>
 							<a href="#pablo">
 								<h3 className={classes.cardTitle}>
-									0 to 100.000 Customers in 6 months
+									Peace Is the Presence of God
 								</h3>
 							</a>
 							<p className={classes.category}>

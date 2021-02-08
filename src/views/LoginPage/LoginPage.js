@@ -25,6 +25,7 @@ import CustomInput from 'components/CustomInput/CustomInput.js'
 import loginPageStyle from 'assets/jss/yeshua-network/views/loginPageStyle.js'
 
 import image from 'assets/img/bg7.jpg'
+import { Link } from 'react-router-dom'
 
 const useStyles = makeStyles(loginPageStyle)
 
@@ -158,52 +159,46 @@ export default function LoginPage () {
 							<div className={classes.left}>
 								<List className={classes.list}>
 									<ListItem className={classes.inlineBlock}>
-										<a
-											href="https://www.creative-tim.com/?ref=mkpr-login"
-											target="_blank"
+										<Link
+											to='/'
 											className={classes.block}
 										>
-											Creative Tim
-										</a>
+											Home
+										</Link>
 									</ListItem>
 									<ListItem className={classes.inlineBlock}>
-										<a
-											href="https://www.creative-tim.com/presentation?ref=mkpr-login"
-											target="_blank"
+										<Link
+											to='/about-us'
 											className={classes.block}
 										>
-											About us
-										</a>
+											About
+										</Link>
 									</ListItem>
 									<ListItem className={classes.inlineBlock}>
-										<a
-											href="//blog.creative-tim.com/"
-											className={classes.block}
-										>
+										<Link to='blog-posts' className={classes.block}>
 											Blog
-										</a>
+										</Link>
 									</ListItem>
 									<ListItem className={classes.inlineBlock}>
-										<a
-											href="https://www.creative-tim.com/license?ref=mkpr-login"
-											target="_blank"
+										<Link
+											to='/contact-us'
 											className={classes.block}
 										>
-											Licenses
-										</a>
+											Contact
+										</Link>
 									</ListItem>
 								</List>
 							</div>
 							<div className={classes.right}>
-								&copy; {1900 + new Date().getYear()} , made with{' '}
+								&copy; {1900 + new Date().getYear()} | made with{' '}
 								<Favorite className={classes.icon}/> by{' '}
 								<a
-									href="https://www.creative-tim.com?ref=mkpr-login"
-									target="_blank"
+									href='mailto:josephdubon@pm.me'
+									target='_blank'
 								>
-									Creative Tim
+									Yeshua Network
 								</a>{' '}
-								for a better web
+								for a better world.
 							</div>
 						</div>
 					}
