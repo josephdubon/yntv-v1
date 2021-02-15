@@ -43,7 +43,12 @@ export default function SectionCurrentMinistries () {
 							<h2 className={classes.title}>Current Ministries</h2>
 							<br/>
 							<GridContainer>
-								<GridItem xs={12} sm={6} md={6}>
+								<GridItem
+									xs={12}
+									sm={12}
+									md={6}
+									lg={3}
+								>
 									<Card plain blog>
 										<CardHeader plain image>
 											<a href='#' onClick={e => e.preventDefault()}>
@@ -84,7 +89,12 @@ export default function SectionCurrentMinistries () {
 										</CardBody>
 									</Card>
 								</GridItem>
-								<GridItem xs={12} sm={6} md={6}>
+								<GridItem
+									xs={12}
+									sm={12}
+									md={6}
+									lg={3}
+								>
 									<Card plain blog>
 										<CardHeader plain image>
 											<a href='#' onClick={e => e.preventDefault()}>
@@ -123,7 +133,12 @@ export default function SectionCurrentMinistries () {
 										</CardBody>
 									</Card>
 								</GridItem>
-								<GridItem xs={12} sm={6} md={6}>
+								<GridItem
+									xs={12}
+									sm={12}
+									md={6}
+									lg={3}
+								>
 									<Card plain blog>
 										<CardHeader plain image>
 											<a href='#' onClick={e => e.preventDefault()}>
@@ -161,7 +176,12 @@ export default function SectionCurrentMinistries () {
 										</CardBody>
 									</Card>
 								</GridItem>
-								<GridItem xs={12} sm={6} md={6}>
+								<GridItem
+									xs={12}
+									sm={12}
+									md={6}
+									lg={3}
+								>
 									<Card plain blog>
 										<CardHeader plain image>
 											<a href='#' onClick={e => e.preventDefault()}>
