@@ -3,6 +3,7 @@ import {
 	cardTitle,
 	container,
 	description,
+	grayColor,
 	hexToRgb,
 	mlAuto,
 	mrAuto,
@@ -28,6 +29,7 @@ const testimonialsSection = {
 			color: whiteColor,
 		},
 		backgroundSize: '550% 450%',
+		padding: '25px',
 	},
 	cardDescription: {
 		...description,
@@ -87,6 +89,7 @@ const testimonialsSection = {
 		'& $cardDescription': {
 			marginBottom: '50px',
 			fontStyle: 'italic',
+			color: grayColor[18],
 		},
 	},
 	starIcons: {
