@@ -30,14 +30,17 @@ export default function SectionCommunityBanner () {
 				<h6 className={classes.cardCategoryWhite}>JOIN OUR COMMUNITY</h6>
 				<a href="#" onClick={e => e.preventDefault()}>
 					<h3 className={classes.cardTitleWhite}>
-						Yeshua Network Online Community Coming Soon...
+						Yeshua Network Online Community Coming Soon.
 					</h3>
+					<h5 className={classes.cardTitleWhite}>
+						For more info and updates please sign up for our newsletter.
+					</h5>
 				</a>
 				<p className={classes.cardDescriptionWhite}>
 					"You shall know the truth and it shall make you free."- Yeshua
 					(John 8:32)
 				</p>
-				<Button simple color="white">
+				<Button href="#signUp" simple color="white">
 					<Subject/> Sign Up
 				</Button>
 				<Button simple color="white">
