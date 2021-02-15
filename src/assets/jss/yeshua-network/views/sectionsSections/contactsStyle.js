@@ -50,7 +50,7 @@ const contactsSection = {
 		'& $infoArea': {},
 	},
 	contacts: {
-		padding: '80px 0',
+		padding: '80px 40px',
 	},
 	infoArea: {
 		padding: '0',
