@@ -98,6 +98,7 @@ const styles = {
 	},
 	cardDescriptionWhite: {
 		color: 'rgba(' + hexToRgb(whiteColor) + ', 0.8)',
+		fontWeight: '400',
 	},
 	author: {
 		display: 'inline-flex',
