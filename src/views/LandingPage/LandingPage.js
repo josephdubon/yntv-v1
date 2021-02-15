@@ -51,12 +51,12 @@ export default function LandingPage ({ ...rest }) {
 	})
 	const classes = useStyles()
 	const settings = {
-		accessibility: true,
 		dots: true,
 		infinite: true,
-		speed: 500,
+		speed: 1000,
 		slidesToShow: 1,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		autoplay: true
 	}
 	return (
 		<div>
