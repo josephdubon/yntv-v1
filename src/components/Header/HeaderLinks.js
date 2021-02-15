@@ -12,25 +12,12 @@ import ListItem from '@material-ui/core/ListItem'
 
 // @material-ui/icons
 import Home from '@material-ui/icons/Home'
-import ShoppingCart from '@material-ui/icons/ShoppingCart'
-import ViewDay from '@material-ui/icons/ViewDay'
-import ViewCarousel from '@material-ui/icons/ViewCarousel'
 import AccountBalance from '@material-ui/icons/AccountBalance'
-import ArtTrack from '@material-ui/icons/ArtTrack'
-import ViewQuilt from '@material-ui/icons/ViewQuilt'
-import LocationOn from '@material-ui/icons/LocationOn'
-import Fingerprint from '@material-ui/icons/Fingerprint'
-import AttachMoney from '@material-ui/icons/AttachMoney'
-import Store from '@material-ui/icons/Store'
-import AccountCircle from '@material-ui/icons/AccountCircle'
-import PersonAdd from '@material-ui/icons/PersonAdd'
-import ShoppingBasket from '@material-ui/icons/ShoppingBasket'
-import Error from '@material-ui/icons/Error'
 
 // core components
-import CustomDropdown from 'components/CustomDropdown/CustomDropdown.js'
-
 import styles from 'assets/jss/yeshua-network/components/headerLinksStyle.js'
+import { ViewQuilt } from '@material-ui/icons'
+import LocationOn from '@material-ui/icons/LocationOn'
 
 const useStyles = makeStyles(styles)
 
@@ -79,73 +66,25 @@ export default function HeaderLinks (props) {
 	return (
 		<List className={classes.list + ' ' + classes.mlAuto}>
 			<ListItem className={classes.listItem}>
-				<CustomDropdown
-					noLiPadding
-					navDropdown
-					hoverColor={dropdownHoverColor}
-					buttonText='Navigation'
-					buttonProps={{
-						className: classes.navLink,
-						color: 'transparent'
-					}}
-					buttonIcon={ViewCarousel}
-					dropdownList={[
-						<Link to='/' className={classes.dropdownLink}>
-							<Home className={classes.dropdownIcons}/> Home
-						</Link>,
-						<Link to='/about-us' className={classes.dropdownLink}>
-							<AccountBalance className={classes.dropdownIcons}/> About Us
-						</Link>,
-						<Link to='/blog-post' className={classes.dropdownLink}>
-							<ArtTrack className={classes.dropdownIcons}/> Blog Post
-						</Link>,
-						<Link to='/blog-posts' className={classes.dropdownLink}>
-							<ViewQuilt className={classes.dropdownIcons}/> Blog Posts
-						</Link>,
-						<Link to='/contact-us' className={classes.dropdownLink}>
-							<LocationOn className={classes.dropdownIcons}/> Contact Us
-						</Link>,
-						<Link to='/landing-page' className={classes.dropdownLink}>
-							<ViewDay className={classes.dropdownIcons}/> Landing Page
-						</Link>,
-						<Link to='/login-page' className={classes.dropdownLink}>
-							<Fingerprint className={classes.dropdownIcons}/> Login Page
-						</Link>,
-						<Link to='/pricing' className={classes.dropdownLink}>
-							<AttachMoney className={classes.dropdownIcons}/> Pricing Page
-						</Link>,
-						<Link to='/shopping-cart-page' className={classes.dropdownLink}>
-							<ShoppingBasket className={classes.dropdownIcons}/> Shopping Cart
-						</Link>,
-						<Link to='/ecommerce-page' className={classes.dropdownLink}>
-							<Store className={classes.dropdownIcons}/> Ecommerce Page
-						</Link>,
-						<Link to='/product-page' className={classes.dropdownLink}>
-							<ShoppingCart className={classes.dropdownIcons}/> Product Page
-						</Link>,
-						<Link to='/profile-page' className={classes.dropdownLink}>
-							<AccountCircle className={classes.dropdownIcons}/> Profile Page
-						</Link>,
-						<Link to='/signup-page' className={classes.dropdownLink}>
-							<PersonAdd className={classes.dropdownIcons}/> Signup Page
-						</Link>,
-						<Link to='/error-page' className={classes.dropdownLink}>
-							<Error className={classes.dropdownIcons}/> Error Page
-						</Link>
-					]}
-				/>
+				<Link to='/' className={classes.listItem}>
+					<Home className={classes.dropdownIcons}/> Home
+				</Link>
 			</ListItem>
-			{/*<ListItem className={classes.listItem}>*/}
-			{/*	<Button*/}
-			{/*		href=''*/}
-			{/*		color={window.innerWidth < 960 ? 'info' : 'white'}*/}
-			{/*		target='_blank'*/}
-			{/*		className={classes.navButton}*/}
-			{/*		round*/}
-			{/*	>*/}
-			{/*		<ShoppingCart className={classes.icons}/> buy now*/}
-			{/*	</Button>*/}
-			{/*</ListItem>*/}
+			<ListItem className={classes.listItem}>
+				<Link to='/about-us' className={classes.listItem}>
+					<AccountBalance className={classes.dropdownIcons}/> About
+				</Link>
+			</ListItem>
+			<ListItem className={classes.listItem}>
+				<Link to='/blog-posts' className={classes.listItem}>
+					<ViewQuilt className={classes.dropdownIcons}/> News
+				</Link>
+			</ListItem>
+			<ListItem className={classes.listItem}>
+				<Link to='/contact-us' className={classes.listItem}>
+					<LocationOn className={classes.dropdownIcons}/> Contact
+				</Link>
+			</ListItem>
 		</List>
 	)
 }

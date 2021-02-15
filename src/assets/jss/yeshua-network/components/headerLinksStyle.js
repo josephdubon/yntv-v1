@@ -169,7 +169,7 @@ const headerLinksStyle = theme => ({
 		fontSize: '1.25rem',
 		maxWidth: '24px'
 	},
-	dropdownLink: {
+	listItem: {
 		'&,&:hover,&:focus': {
 			color: 'inherit',
 			textDecoration: 'none',
