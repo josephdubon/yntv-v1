@@ -2,28 +2,35 @@ import React from 'react'
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles'
 // @material-ui/icons
-import TrendingUp from '@material-ui/icons/TrendingUp'
 // core components
 import GridContainer from 'components/Grid/GridContainer.js'
 import GridItem from 'components/Grid/GridItem.js'
 import Card from 'components/Card/Card.js'
 import CardHeader from 'components/Card/CardHeader.js'
-import Info from 'components/Typography/Info.js'
-import Danger from 'components/Typography/Danger.js'
-import Success from 'components/Typography/Success.js'
+import CardBody from 'components/Card/CardBody.js'
 
-import blogsStyle from 'assets/jss/yeshua-network/views/sectionsSections/blogsStyle.js'
+import teamsStyle from 'assets/jss/yeshua-network/views/sectionsSections/teamsStyle.js'
+import teamStyle from 'assets/jss/yeshua-network/views/landingPageSections/teamStyle.js'
+import cardBlog4 from '../../../assets/img/examples/card-blog4.jpg'
+import Info from '../../../components/Typography/Info'
+import blog5 from '../../../assets/img/examples/blog5.jpg'
+import Success from '../../../components/Typography/Success'
 
-import cardBlog4 from 'assets/img/examples/card-blog4.jpg'
-import office2 from 'assets/img/office2.jpg'
-import blog8 from 'assets/img/examples/blog8.jpg'
+const style = {
+	...teamsStyle,
+	...teamStyle,
+	justifyContentCenter: {
+		justifyContent: 'center'
+	}
+}
 
-const useStyles = makeStyles(blogsStyle)
+const useStyles = makeStyles(style)
 
-export default function SectionBlogs ({ ...rest }) {
+export default function SectionLatestVideos () {
 	const classes = useStyles()
 	return (
-		<div className="cd-section" {...rest}>
+		<div className={classes.section}>
+			{/* Blogs 2 START */}
 			<div className={classes.blog}>
 				<div className={classes.container}>
 					<GridContainer>
@@ -33,14 +40,19 @@ export default function SectionBlogs ({ ...rest }) {
 							md={12}
 							className={classes.mlAuto + ' ' + classes.mrAuto}
 						>
-							<h2 className={classes.title + ' ' + classes.title_center}>Latest Videos</h2>
+							<h2 className={classes.title}>Latest Videos</h2>
 							<br/>
-							<Card plain blog className={classes.card}>
-								<GridContainer>
-									<GridItem xs={12} sm={4} md={4}>
-										<CardHeader image plain>
-											<a href="#" onClick={e => e.preventDefault()}>
-												<img src={cardBlog4} alt="..."/>
+							<GridContainer>
+								<GridItem
+									xs={12}
+									sm={12}
+									md={6}
+									lg={3}
+								>
+									<Card plain blog>
+										<CardHeader plain image>
+											<a href='#' onClick={e => e.preventDefault()}>
+												<img src={cardBlog4} alt='...'/>
 											</a>
 											<div
 												className={classes.coloredShadow}
@@ -49,205 +61,170 @@ export default function SectionBlogs ({ ...rest }) {
 													opacity: '1'
 												}}
 											/>
+										</CardHeader>
+										<CardBody plain>
+											<Info>
+												<h6 className={classes.cardCategory}>Why Your Work Matters</h6>
+											</Info>
+											<h4 className={classes.cardTitle}>
+												<a href='#' onClick={e => e.preventDefault()}>
+													Why Your Work Matters
+												</a>
+											</h4>
+											<p className={classes.description}>
+												<small>Luke 4:4: 'Live by EVERY WORD of God” – Yeshua</small>
+												<br/>Join us Sundays at 1 pm (PST).
+												<br/>
+												Click here to learn what
+												passages
+												will be covered next.
+
+												Leave your comments and questions to be read live this Sunday!
+												<br/>
+												<a href='#' onClick={e => e.preventDefault()}>
+													{' '}
+													Read More{' '}
+												</a>
+											</p>
+										</CardBody>
+									</Card>
+								</GridItem>
+								<GridItem
+									xs={12}
+									sm={12}
+									md={6}
+									lg={3}
+								>
+									<Card plain blog>
+										<CardHeader plain image>
+											<a href='#' onClick={e => e.preventDefault()}>
+												<img src={blog5} alt='...'/>
+											</a>
 											<div
 												className={classes.coloredShadow}
 												style={{
-													backgroundImage: `url(${cardBlog4})`,
+													backgroundImage: `url(${blog5})`,
 													opacity: '1'
 												}}
 											/>
 										</CardHeader>
-									</GridItem>
-									<GridItem xs={12} sm={8} md={8}>
-										<Info>
-											<h6 className={classes.cardCategory}>ENTERPRISE</h6>
-										</Info>
-										<h3 className={classes.cardTitle}>
-											<a href="#" onClick={e => e.preventDefault()}>
-												Why Your Work Matters
-											</a>
-										</h3>
-										<p className={classes.description}>
-											Let us not give up meeting together, as some are in the habit of doing, but
-											let us encourage one another—and all the more as you see the Day
-											approaching. Through these he has given us his very great and precious
-											promises, so that through them...
-											<a href="#" onClick={e => e.preventDefault()}>
-												{' '}
-												Read More{' '}
-											</a>
-										</p>
-										<p className={classes.author}>
-											by{' '}
-											<a href="#" onClick={e => e.preventDefault()}>
-												<b>Nathan Wheeler</b>
-											</a>
-											, 2 days ago
-										</p>
-									</GridItem>
-								</GridContainer>
-							</Card>
-							<Card plain blog className={classes.card}>
-								<GridContainer>
-									<GridItem xs={12} sm={8} md={8}>
-										<Danger>
-											<h6 className={classes.cardCategory}>
-												<TrendingUp/>
-												TRENDING
-											</h6>
-										</Danger>
-										<h3 className={classes.cardTitle}>
-											<a href="#" onClick={e => e.preventDefault()}>
-												In His Own Words
-											</a>
-										</h3>
-										<p className={classes.description}>
-											Let us not give up meeting together, as some are in the habit of doing, but
-											let us encourage one another—and all the more as you see the Day
-											approaching. Through these he has given us his very great and precious
-											promises, so that through them...
-											<a href="#" onClick={e => e.preventDefault()}>
-												{' '}
-												Read More{' '}
-											</a>
-										</p>
-										<p className={classes.author}>
-											by{' '}
-											<a href="#" onClick={e => e.preventDefault()}>
-												<b>Nathan Wheeler</b>
-											</a>
-											, 2 days ago
-										</p>
-									</GridItem>
-									<GridItem xs={12} sm={4} md={4}>
-										<CardHeader image plain>
-											<a href="#" onClick={e => e.preventDefault()}>
-												<img src={office2} alt="..."/>
+										<CardBody plain>
+											<Success>
+												<h6 className={classes.cardCategory}>In His Own Words</h6>
+											</Success>
+											<h4 className={classes.cardTitle}>
+												<a href='#' onClick={e => e.preventDefault()}>
+													In His Own Words </a>
+											</h4>
+											<p className={classes.description}>
+												<small>Matthew 28:19-20 'Go and testify” – Yeshua</small>
+												<br/>
+												Every day is a day to testify of YHWH in your life! These videos don’t
+												just give you a chance to hear what YHWH did in other people’s lives but
+												gives you a chance to share what He did in yours as well! Come and
+												testify of His goodness with us!
+												<br/>
+												<a href='#' onClick={e => e.preventDefault()}>
+													{' '}
+													Read More{' '}
+												</a>
+											</p>
+										</CardBody>
+									</Card>
+								</GridItem>
+								<GridItem
+									xs={12}
+									sm={12}
+									md={6}
+									lg={3}
+								>
+									<Card plain blog>
+										<CardHeader plain image>
+											<a href='#' onClick={e => e.preventDefault()}>
+												<img src={blog5} alt='...'/>
 											</a>
 											<div
 												className={classes.coloredShadow}
 												style={{
-													backgroundImage: `url(${office2})`,
-													opacity: '1'
-												}}
-											/>
-											<div
-												className={classes.coloredShadow}
-												style={{
-													backgroundImage: `url(${office2})`,
+													backgroundImage: `url(${blog5})`,
 													opacity: '1'
 												}}
 											/>
 										</CardHeader>
-									</GridItem>
-								</GridContainer>
-							</Card>
-							<Card plain blog className={classes.card}>
-								<GridContainer>
-									<GridItem xs={12} sm={4} md={4}>
-										<CardHeader image plain>
-											<a href="#" onClick={e => e.preventDefault()}>
-												<img src={blog8} alt="..."/>
+										<CardBody plain>
+											<Success>
+												<h6 className={classes.cardCategory}>Always Go Forward</h6>
+											</Success>
+											<h4 className={classes.cardTitle}>
+												<a href='#' onClick={e => e.preventDefault()}>
+													Always Go Forward </a>
+											</h4>
+											<p className={classes.description}>
+												<small>John 8:32 'The truth shall make you free” – Yeshua</small>
+												<br/>
+												Hear the story of how Yeshua Network founder, Nathan Wheeler, flatlined,
+												visited paradise (heaven) and was sent back to life by YHWH (God) to
+												tell his story and start the ministry you see here today.
+												<br/>
+												<a href='#' onClick={e => e.preventDefault()}>
+													{' '}
+													Read More{' '}
+												</a>
+											</p>
+										</CardBody>
+									</Card>
+								</GridItem>
+								<GridItem
+									xs={12}
+									sm={12}
+									md={6}
+									lg={3}
+								>
+									<Card plain blog>
+										<CardHeader plain image>
+											<a href='#' onClick={e => e.preventDefault()}>
+												<img src={blog5} alt='...'/>
 											</a>
 											<div
 												className={classes.coloredShadow}
 												style={{
-													backgroundImage: `url(${blog8})`,
-													opacity: '1'
-												}}
-											/>
-											<div
-												className={classes.coloredShadow}
-												style={{
-													backgroundImage: `url(${blog8})`,
+													backgroundImage: `url(${blog5})`,
 													opacity: '1'
 												}}
 											/>
 										</CardHeader>
-									</GridItem>
-									<GridItem xs={12} sm={8} md={8}>
-										<Success>
-											<h6 className={classes.cardCategory}>STARTUPS</h6>
-										</Success>
-										<h3 className={classes.cardTitle}>
-											<a href="#" onClick={e => e.preventDefault()}>
-												Always Go Forward
-											</a>
-										</h3>
-										<p className={classes.description}>
-											Let us not give up meeting together, as some are in the habit of doing, but
-											let us encourage one another—and all the more as you see the Day
-											approaching. Through these he has given us his very great and precious
-											promises, so that through them...
-											<a href="#" onClick={e => e.preventDefault()}>
-												{' '}
-												Read More{' '}
-											</a>
-										</p>
-										<p className={classes.author}>
-											by{' '}
-											<a href="#" onClick={e => e.preventDefault()}>
-												<b>Nathan Wheeler</b>
-											</a>
-											, 2 days ago
-										</p>
-									</GridItem>
-								</GridContainer>
-							</Card>
+										<CardBody plain>
+											<Success>
+												<h6 className={classes.cardCategory}>Faith Is Our Salvation</h6>
+											</Success>
+											<h4 className={classes.cardTitle}>
+												<a href='#' onClick={e => e.preventDefault()}>
+													Faith Is Our Salvation </a>
+											</h4>
+											<p className={classes.description}>
+												<small>Matthew 5:14-16 “You are the light of the world…” –
+													Yeshua</small>
+												<br/>
+												On the 22nd of every month believers all over the world stand in unity
+												(regardless of denomination), they light a candle at sunset, post a
+												picture of it with #BeTheLight on their social media pages. Together the
+												body of Christ shines brightly for all to see!
+												<br/>
+												<a href='#' onClick={e => e.preventDefault()}>
+													{' '}
+													Read More{' '}
+												</a>
+											</p>
+										</CardBody>
+									</Card>
+								</GridItem>
+
+							</GridContainer>
 						</GridItem>
-						<GridItem xs={12} sm={8} md={8}>
-							<Danger>
-								<h6 className={classes.cardCategory}>
-									<TrendingUp/>
-									TRENDING
-								</h6>
-							</Danger>
-							<h3 className={classes.cardTitle}>
-								<a href="#" onClick={e => e.preventDefault()}>
-									Faith Is Our Salvation
-								</a>
-							</h3>
-							<p className={classes.description}>
-								Let us not give up meeting together, as some are in the habit of doing, but
-								let us encourage one another—and all the more as you see the Day
-								approaching. Through these he has given us his very great and precious
-								promises, so that through them...
-								<a href="#" onClick={e => e.preventDefault()}>
-									{' '}
-									Read More{' '}
-								</a>
-							</p>
-							<p className={classes.author}>
-								by{' '}
-								<a href="#" onClick={e => e.preventDefault()}>
-									<b>Nathan Wheeler</b>
-								</a>{' '}
-								, 2 days ago
-							</p>
-						</GridItem> <GridItem xs={12} sm={4} md={4}>
-						<CardHeader image plain>
-							<a href="#" onClick={e => e.preventDefault()}>
-								<img src={office2} alt="..."/>
-							</a>
-							<div
-								className={classes.coloredShadow}
-								style={{
-									backgroundImage: `url(${office2})`,
-									opacity: '1'
-								}}
-							/>
-							<div
-								className={classes.coloredShadow}
-								style={{
-									backgroundImage: `url(${office2})`,
-									opacity: '1'
-								}}
-							/>
-						</CardHeader>
-					</GridItem>
 					</GridContainer>
 				</div>
 			</div>
+			{/* Blogs 2 END */}
 		</div>
 	)
 }
