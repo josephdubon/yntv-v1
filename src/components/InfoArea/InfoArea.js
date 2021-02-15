@@ -24,10 +24,10 @@ export default function InfoArea (props) {
 		[classes.iconVertical]: vertical
 	})
 	const infoAreaClasses = classNames({
-		[classes.infoArea]: true,
+		[classes.infoAreaNP]: true,
 		[className]: className !== undefined
 	})
-	let icon = null
+	let icon
 	switch (typeof props.icon) {
 		case 'string':
 			icon = <Icon className={iconClasses}>{props.icon}</Icon>
