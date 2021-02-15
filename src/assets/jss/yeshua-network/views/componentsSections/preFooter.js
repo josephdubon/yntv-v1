@@ -71,6 +71,7 @@ const styles = {
 		padding: '1.875rem 0px',
 		'& $card': {
 			marginTop: '30px',
+			borderRadius: '6px',
 		},
 		'& form': { margin: '0px' },
 		'& $formFix': { paddingTop: '0px' },
@@ -84,6 +85,7 @@ const styles = {
 			top: 0,
 			content: '\'\'',
 			backgroundColor: 'rgba(' + hexToRgb(blackColor) + ',0.66)',
+			borderRadius: '6px',
 		},
 	},
 	formFix: {},
@@ -107,6 +109,7 @@ const styles = {
 		'& $description': {
 			color: grayColor[0],
 		},
+		borderRadius: '6px',
 	},
 	subscribeButton: {},
 	border: {},
