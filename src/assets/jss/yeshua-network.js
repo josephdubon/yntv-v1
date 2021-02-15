@@ -105,7 +105,7 @@ const infoColor = [
 ]
 const roseColor = ['#e91e63', '#ec407a', '#d81b60', '#f8bbd0', '#f06292']
 const grayColor = [
-	'#999',
+	'#bdbdbd',
 	'#3C4858',
 	'#eee',
 	'#343434',
@@ -331,7 +331,7 @@ const title = {
 	marginTop: '30px',
 	marginBottom: '25px',
 	minHeight: '32px',
-	fontFamily: `"Roboto Slab", "Times New Roman", serif`
+	fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
 }
 
 const cardTitle = {
