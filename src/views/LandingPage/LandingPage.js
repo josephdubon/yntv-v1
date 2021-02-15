@@ -22,8 +22,7 @@ import landingPageStyle from 'assets/jss/yeshua-network/views/landingPageStyle.j
 import SectionIntro from './Sections/SectionIntro.js'
 import SectionCurrentMinistries from './Sections/SectionCurrentMinistries.js'
 import SectionContactForm from './Sections/SectionContactForm'
-import SectionCommunityBanner from './Sections/SectionCommunityBanner'
-import SectionTestimonial from './Sections/SectionTestimonials'
+import SectionQuotes from './Sections/SectionQuotes'
 import SectionLatestVideos from './Sections/SectionLatestVideos'
 import SectionNewsletter from './Sections/SectionNewsletter'
 
@@ -199,12 +198,11 @@ export default function LandingPage ({ ...rest }) {
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div className={classes.container}>
 					<SectionIntro/>
-					<SectionCommunityBanner/>
+					<SectionNewsletter/>
 					<SectionCurrentMinistries/>
-					<SectionTestimonial/>
+					<SectionQuotes/>
 					<SectionLatestVideos/>
 					<SectionContactForm/>
-					<SectionNewsletter/>
 				</div>
 			</div>
 			<Footer
