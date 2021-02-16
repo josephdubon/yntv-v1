@@ -16,8 +16,8 @@
 
 // ##############################
 // // // Function that converts from hex color to rgb color
-// // // Example: input = #9c27b0 => output = 156, 39, 176
-// // // Example: input = 9c27b0 => output = 156, 39, 176
+// // // Example: input = #2C5197 => output = 156, 39, 176
+// // // Example: input = 2C5197 => output = 156, 39, 176
 // // // Example: input = #999 => output = 153, 153, 153
 // // // Example: input = 999 => output = 153, 153, 153
 // #############################
@@ -55,12 +55,12 @@ const hexToRgb = input => {
 const drawerWidth = 260
 
 const primaryColor = [
-	'#9c27b0',
-	'#ab47bc',
-	'#8e24aa',
-	'#af2cc5',
-	'#e1bee7',
-	'#ba68c8'
+	'#2C5197',
+	'#2C5197',
+	'#2C5197',
+	'#2C5197',
+	'#2C5197',
+	'#2C5197'
 ]
 const secondaryColor = ['#fafafa']
 const warningColor = [
@@ -125,7 +125,7 @@ const grayColor = [
 	'#ccc',
 	'#444',
 	'#f2f2f2',
-	'#89229b',
+	'#2C5197',
 	'#c0c1c2',
 	'#9a9a9a',
 	'#f5f5f5',

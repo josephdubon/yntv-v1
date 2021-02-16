@@ -67,7 +67,7 @@ export default function LandingPage ({ ...rest }) {
 				fixed
 				changeColorOnScroll={{
 					height: 300,
-					color: 'info'
+					color: 'primary'
 				}}
 				{...rest}
 			/>
@@ -91,7 +91,7 @@ export default function LandingPage ({ ...rest }) {
 										Yeshua Ha’Mashiach and His disciples.
 									</h4>
 									<br/>
-									<Button color="danger" size="lg">
+									<Button color="primary" size="lg">
 										Read more
 									</Button>
 									<Button justIcon color="white" simple>
@@ -184,7 +184,7 @@ export default function LandingPage ({ ...rest }) {
 										<Button color="white" simple size="lg">
 											<Share/> Share Offer
 										</Button>
-										<Button color="danger" size="lg">
+										<Button color="primary" size="lg">
 											<ShoppingCart/> Shop now
 										</Button>
 									</div>

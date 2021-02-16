@@ -1,4 +1,4 @@
-import { blackColor, grayColor, title, whiteColor } from 'assets/jss/yeshua-network'
+import { blackColor, grayColor, primaryColor, title, whiteColor } from 'assets/jss/yeshua-network'
 
 const productStyle = {
 	avatar: {
@@ -17,7 +17,7 @@ const productStyle = {
 	},
 	titleColor: {
 		...title,
-		background: grayColor[18],
+		background: primaryColor[0],
 		color: whiteColor,
 		padding: '15px',
 		marginBottom: '1rem',
