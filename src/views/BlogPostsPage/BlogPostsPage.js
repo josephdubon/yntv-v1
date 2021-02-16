@@ -14,10 +14,8 @@ import GridContainer from 'components/Grid/GridContainer.js'
 import GridItem from 'components/Grid/GridItem.js'
 import Parallax from 'components/Parallax/Parallax.js'
 // sections for this page
-import SectionPills from './Sections/SectionPills.js'
 import SectionInterested from './Sections/SectionInterested.js'
-import SectionImage from './Sections/SectionImage.js'
-import SubscribeLine from './Sections/SubscribeLine.js'
+import SectionNewsletter from './Sections/SectionNewsletter.js'
 
 import blogPostsPageStyle from 'assets/jss/yeshua-network/views/blogPostsPageStyle.js'
 import { Link } from 'react-router-dom'
@@ -58,9 +56,7 @@ export default function BlogPostsPage () {
 							<h1 className={classes.title}>News</h1>
 							<h4>
 								Here you find updates for things going on within the Yeshua Network and its affiliates,
-								as well as what is going on in the world around you. See something you like? Click on
-								the image and on each posting check the bottom of the page where you can leave your
-								thoughts in the comment section
+								as well as what is going on in the world around you.
 							</h4>
 						</GridItem>
 					</GridContainer>
@@ -68,11 +64,9 @@ export default function BlogPostsPage () {
 			</Parallax>
 			<div className={classes.main}>
 				<div className={classes.container}>
-					<SectionPills/>
 					<SectionInterested/>
+					<SectionNewsletter/>
 				</div>
-				<SectionImage/>
-				<SubscribeLine/>
 			</div>
 			<Footer
 				content={
