@@ -22,7 +22,7 @@ export default function SectionOffice () {
 	const classes = useStyles()
 	return (
 		<div className={classes.office}>
-			<GridContainer className={classes.textCenter}>
+			<GridContainer className={classNames(classes.textCenter, classes.section)}>
 				<GridItem
 					md={10}
 					sm={10}
