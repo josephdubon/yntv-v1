@@ -33,12 +33,12 @@ export default function BlogPostsPage () {
 		<div>
 			<Header
 				brand="Yeshua Network"
-				links={<HeaderLinks dropdownHoverColor="info"/>}
+				links={<HeaderLinks dropdownHoverColor="primary"/>}
 				fixed
 				color="transparent"
 				changeColorOnScroll={{
 					height: 400,
-					color: 'info'
+					color: 'primary'
 				}}
 			/>
 			<Parallax image={require('assets/img/bg10.jpg')} filter="dark" small>

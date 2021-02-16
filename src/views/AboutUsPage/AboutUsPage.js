@@ -36,12 +36,12 @@ export default function AboutUsPage () {
 		<div>
 			<Header
 				brand="Yeshua Network"
-				links={<HeaderLinks dropdownHoverColor="info"/>}
+				links={<HeaderLinks dropdownHoverColor="primary"/>}
 				fixed
 				color="transparent"
 				changeColorOnScroll={{
 					height: 300,
-					color: 'info'
+					color: 'primary'
 				}}
 			/>
 			<Parallax image={require('assets/img/bg9.jpg')} filter="dark" small>
