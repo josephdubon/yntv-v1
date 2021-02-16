@@ -5,7 +5,10 @@ const imgRaised = imagesStyles.imgRaised
 const rounded = imagesStyles.imgRounded
 const imgFluid = imagesStyles.imgFluid
 
-const servicesStyle = {
+const officeStyle = {
+	section: {
+		padding: '40px',
+	},
 	title,
 	description,
 	mrAuto,
@@ -23,4 +26,4 @@ const servicesStyle = {
 	imgFluid,
 }
 
-export default servicesStyle
+export default officeStyle
