@@ -7,7 +7,7 @@ const contactUsStyle = {
 	description,
 	container: {
 		...container,
-		maxWidth: '970px !important',
+		// maxWidth: '970px !important',
 		zIndex: '1',
 	},
 	contactContent: {
