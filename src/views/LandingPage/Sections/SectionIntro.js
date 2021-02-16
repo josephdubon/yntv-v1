@@ -18,6 +18,7 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar'
 import Avatar from '@material-ui/core/Avatar'
 
 import productStyle from 'assets/jss/yeshua-network/views/landingPageSections/productStyle.js'
+import classNames from 'classnames'
 
 const useStyles = makeStyles(productStyle)
 
@@ -26,11 +27,19 @@ export default function SectionIntro () {
 	return (
 		<div className={classes.section}>
 			<GridContainer justify='flex-start'>
-				<GridItem xs={12} sm={12} md={12}>
+				<GridItem
+					xs={12}
+					sm={12}
+					md={12}
+				>
 					<h2 className={classes.title}>Welcome to the Yeshua Network!</h2>
 					<br/><br/>
 				</GridItem>
-				<GridItem xs={12} sm={12} md={8}>
+				<GridItem
+					xs={12}
+					sm={12}
+					md={8}
+				>
 					<h5 className={classes.description}>
 						Welcome to the Yeshua Network we create content and media of all types that inspire, educate and
 						testify of the One True Living Creator (YHWH). We create content that stands on the written word
