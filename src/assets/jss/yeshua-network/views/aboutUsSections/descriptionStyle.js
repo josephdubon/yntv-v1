@@ -1,4 +1,4 @@
-import { container, description, mlAuto, mrAuto, } from 'assets/jss/yeshua-network'
+import { container, grayColor, mlAuto, mrAuto, } from 'assets/jss/yeshua-network'
 
 const descriptionStyle = {
 	container,
@@ -10,7 +10,10 @@ const descriptionStyle = {
 	},
 	mrAuto,
 	mlAuto,
-	description,
+	description: {
+		color: grayColor[18],
+
+	},
 
 }
 
