@@ -202,6 +202,7 @@ export default function LandingPage ({ ...rest }) {
 					<SectionCurrentMinistries/>
 					<SectionQuotes/>
 					<SectionLatestVideos/>
+					{/*<SectionCountdown/>*/}
 					<SectionContactForm/>
 				</div>
 			</div>
