@@ -229,7 +229,7 @@ export default function LandingPage ({ ...rest }) {
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
 									<Link to='blog-posts' className={classes.block}>
-										Blog
+										News
 									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>

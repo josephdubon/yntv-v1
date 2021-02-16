@@ -95,7 +95,7 @@ export default function ContactUsPage () {
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
 									<Link to='blog-posts' className={classes.block}>
-										Blog
+										News
 									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
