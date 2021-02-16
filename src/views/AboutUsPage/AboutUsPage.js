@@ -18,9 +18,7 @@ import Footer from 'components/Footer/Footer.js'
 import HeaderLinks from 'components/Header/HeaderLinks.js'
 import SectionDescription from 'views/AboutUsPage/Sections/SectionDescription.js'
 import SectionTeam from 'views/AboutUsPage/Sections/SectionTeam.js'
-import SectionServices from 'views/AboutUsPage/Sections/SectionServices.js'
 import SectionOffice from 'views/AboutUsPage/Sections/SectionOffice.js'
-import SectionMailingList from 'views/AboutUsPage/Sections/SectionMailingList.js'
 import SectionNewsletter from 'views/AboutUsPage/Sections/SectionNewsletter.js'
 
 import aboutUsStyle from 'assets/jss/yeshua-network/views/aboutUsStyle.js'
@@ -68,10 +66,8 @@ export default function AboutUsPage () {
 			</Parallax>
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div className={classes.container}>
-					<SectionDescription/>
 					<SectionTeam/>
-					<SectionServices/>
-					<SectionMailingList/>
+					<SectionDescription/>
 					<SectionOffice/>
 					<SectionNewsletter/>
 				</div>
