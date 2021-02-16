@@ -8,6 +8,7 @@ const teamStyle = {
 		...description,
 		color: grayColor[18],
 		marginBottom: '80px',
+		textAlign: 'justify',
 	},
 	cardTitle,
 	cardDescription: {

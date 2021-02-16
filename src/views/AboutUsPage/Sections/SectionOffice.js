@@ -30,7 +30,7 @@ export default function SectionOffice () {
 					className={classNames(classes.mrAuto, classes.mlAuto)}
 				>
 					<h3 className={classes.title}>Some Photos From The Road</h3>
-					<h5 className={classes.description}>
+					<h5 className={classNames(classes.textJustify, classes.description)}>
 						Cast all your anxiety on him because he cares for you. For we are God’s workmanship, created in
 						Christ Jesus to do good works, which God prepared in advance for us to do. No temptation has
 						seized you except what is common to man.
