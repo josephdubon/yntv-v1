@@ -37,7 +37,8 @@ const features = {
 		},
 	},
 	features5: {
-		padding: '80px 0',
+		borderRadius: '6px',
+		padding: '80px 40px',
 		backgroundSize: 'cover',
 		backgroundPosition: '50%',
 		backgroundRepeat: 'no-repeat',
@@ -59,6 +60,7 @@ const features = {
 			zIndex: '0',
 			left: '0px',
 			top: '0px',
+			borderRadius: '6px',
 		},
 		'& $container': {
 			'& $gridContainer:last-child': {
