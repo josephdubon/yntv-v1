@@ -24,6 +24,12 @@ const headerLinksStyle = theme => ({
 		padding: '0'
 	},
 	listItem: {
+		'&,&:hover,&:focus': {
+			color: 'inherit',
+			textDecoration: 'none',
+			display: 'flex',
+			padding: '0.75rem 1.25rem 0.75rem 0.75rem'
+		},
 		float: 'left',
 		color: 'inherit',
 		position: 'relative',
@@ -168,14 +174,6 @@ const headerLinksStyle = theme => ({
 		position: 'relative',
 		fontSize: '1.25rem',
 		maxWidth: '24px'
-	},
-	listItem: {
-		'&,&:hover,&:focus': {
-			color: 'inherit',
-			textDecoration: 'none',
-			display: 'flex',
-			padding: '0.75rem 1.25rem 0.75rem 0.75rem'
-		}
 	},
 	...tooltip,
 	marginRight5: {
