@@ -1,4 +1,4 @@
-import { description, mlAuto, mrAuto, title } from 'assets/jss/yeshua-network'
+import { description, grayColor, mlAuto, mrAuto, title } from 'assets/jss/yeshua-network'
 import imagesStyles from 'assets/jss/yeshua-network/imagesStyles.js'
 
 const imgRaised = imagesStyles.imgRaised
@@ -15,6 +15,10 @@ const officeStyle = {
 	mlAuto,
 	textCenter: {
 		textAlign: 'center!important',
+	},
+	textJustify: {
+		textAlign: 'justify',
+		color: grayColor[18],
 	},
 	office: {
 		'& img': {
