@@ -39,15 +39,18 @@ export default function SectionContacts ({ ...rest }) {
 	}
 	const classes = useStyles()
 	return (
-		<div className="cd-section" {...rest}>
-			{/* Contact us 1 START */}
-			<div
-				className={classes.contacts + ' ' + classes.section}
-				style={{ backgroundImage: `url(${city})` }}
-			>
-				<div className={classes.container}>
-					<GridContainer>
-						<GridItem xs={12} sm={6} md={6}>
+		<>
+			<GridContainer className="cd-section" {...rest}>
+				{/* Contact us 1 START */}
+				<GridItem
+					xs={12}
+					sm={12}
+					md={12}
+					className={classes.contacts + ' ' + classes.section}
+					style={{ backgroundImage: `url(${city})` }}
+				>
+					<GridContainer className={classes.container}>
+						<GridItem xs={12} sm={12} md={5} lg={4}>
 							<h2 className={classes.title}>Get in Touch</h2>
 							<h5 className={classes.description}>
 								You can reach us at the following ways:
@@ -70,7 +73,7 @@ export default function SectionContacts ({ ...rest }) {
 							/>
 							<InfoArea
 								className={classes.infoArea}
-								title="For prayer requests, site suggestions, or professional inquiries: "
+								title="Send us your issues and site suggestions to the following email addresses: "
 								description={
 									<span>
 										Nathan Wheeler
@@ -81,7 +84,9 @@ export default function SectionContacts ({ ...rest }) {
 								icon={EmailIcon}
 							/>
 						</GridItem>
-						<GridItem xs={12} sm={6} md={6} className={classes.mlAuto}>
+						<GridItem
+							xs={12} sm={12} md={6} lg={8}
+							className={classes.mlAuto}>
 							<Card className={classes.card1}>
 								<form>
 									<CardHeader
@@ -158,10 +163,12 @@ export default function SectionContacts ({ ...rest }) {
 							</Card>
 						</GridItem>
 					</GridContainer>
-				</div>
-			</div>
-			{/* Contact us 1 END */}
+				</GridItem>
+				{/* Contact us 1 END */}
+				<br/>
+			</GridContainer>
 			<br/>
-		</div>
+			<br/>
+		</>
 	)
 }
