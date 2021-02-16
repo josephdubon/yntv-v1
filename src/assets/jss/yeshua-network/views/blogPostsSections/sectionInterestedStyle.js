@@ -4,6 +4,9 @@ const sectionInterestedStyle = {
 	title,
 	cardTitle,
 	coloredShadow,
+	textJustify: {
+		textAlign: 'justify',
+	},
 	textCenter: {
 		textAlign: 'center',
 	},
@@ -13,7 +16,9 @@ const sectionInterestedStyle = {
 		padding: '70px 0',
 	},
 	description: {
-		color: grayColor[0],
+		color: grayColor[18],
+		textAlign: 'justify',
+
 	},
 }
 
