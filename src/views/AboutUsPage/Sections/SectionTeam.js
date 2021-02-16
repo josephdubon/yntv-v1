@@ -38,19 +38,31 @@ export default function SectionTeam () {
 						classes.textCenter
 					)}
 				>
-					<h3 className={classes.title}>Together We Change The World</h3>
+					<h3 className={classes.title}>Yeshua is our risen savior!</h3>
 					<h5 className={classes.description}>
 						The Yeshua Network was created by Nathan Wheeler under the Facebook page “YeshuaOfficial” on
 						April 13th, 2014. Fulfilling a prophecy that was spoken over him by the Lord during his NDE in
 						2013.
 					</h5>
 				</GridItem>
+				<GridItem
+					md={10}
+					sm={10}
+					className={classNames(
+						classes.mrAuto,
+						classes.mlAuto,
+						classes.textCenter
+					)}
+				>
+					<h3 className={classes.title}>Leadership Team</h3>
+				</GridItem>
+
 			</GridContainer>
 			<GridContainer>
 				<GridItem md={3} sm={6}>
 					<Card profile plain>
 						<CardAvatar profile plain>
-							<a href="#pablo">
+							<a href="#">
 								<img src={FaceMarc} alt="profile-pic" className={classes.img}/>
 							</a>
 						</CardAvatar>
@@ -78,7 +90,7 @@ export default function SectionTeam () {
 				<GridItem md={3} sm={6}>
 					<Card profile plain>
 						<CardAvatar profile plain>
-							<a href="#pablo">
+							<a href="#">
 								<img
 									src={FaceKendall}
 									alt="profile-pic"
@@ -110,7 +122,7 @@ export default function SectionTeam () {
 				<GridItem md={3} sm={6}>
 					<Card profile plain>
 						<CardAvatar profile plain>
-							<a href="#pablo">
+							<a href="#">
 								<img
 									src={FaceChristian}
 									alt="profile-pic"
@@ -142,7 +154,7 @@ export default function SectionTeam () {
 				<GridItem md={3} sm={6}>
 					<Card profile plain>
 						<CardAvatar profile plain>
-							<a href="#pablo">
+							<a href="#">
 								<img
 									src={FaceAvatar}
 									alt="profile-pic"
