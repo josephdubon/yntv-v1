@@ -44,7 +44,7 @@ export default function AboutUsPage () {
 					color: 'primary'
 				}}
 			/>
-			<Parallax image={require('assets/img/bg9.jpg')} filter="dark" small>
+			<Parallax image={require('assets/img/bg-images/bwteamMountainPeak.jpg')} filter="dark" small>
 				<div className={classes.container}>
 					<GridContainer justify="center">
 						<GridItem
@@ -87,20 +87,20 @@ export default function AboutUsPage () {
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
 									<Link
-										to='/about-us'
+										to='/about'
 										className={classes.block}
 									>
 										About
 									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<Link to='blog-posts' className={classes.block}>
+									<Link to='news' className={classes.block}>
 										News
 									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
 									<Link
-										to='/contact-us'
+										to='/contact'
 										className={classes.block}
 									>
 										Contact

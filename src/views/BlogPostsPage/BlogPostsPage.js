@@ -41,7 +41,7 @@ export default function BlogPostsPage () {
 					color: 'primary'
 				}}
 			/>
-			<Parallax image={require('assets/img/bg10.jpg')} filter="dark" small>
+			<Parallax image={require('assets/img/bg-images/handsPrayingBible.jpg')} filter="dark" small>
 				<div className={classes.container}>
 					<GridContainer justify="center">
 						<GridItem
@@ -83,20 +83,20 @@ export default function BlogPostsPage () {
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
 									<Link
-										to='/about-us'
+										to='/about'
 										className={classes.block}
 									>
 										About
 									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<Link to='blog-posts' className={classes.block}>
+									<Link to='news' className={classes.block}>
 										News
 									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
 									<Link
-										to='/contact-us'
+										to='/contact'
 										className={classes.block}
 									>
 										Contact
