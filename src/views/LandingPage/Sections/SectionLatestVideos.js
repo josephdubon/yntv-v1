@@ -72,14 +72,7 @@ export default function SectionLatestVideos () {
 												</a>
 											</h4>
 											<p className={classes.description}>
-												<small>Luke 4:4: 'Live by EVERY WORD of God” – Yeshua</small>
-												<br/>Join us Sundays at 1 pm (PST).
-												<br/>
-												Click here to learn what
-												passages
-												will be covered next.
-
-												Leave your comments and questions to be read live this Sunday!
+												<small>Luke 4:4: 'Live by EVERY WORD of God”</small>
 												<br/>
 												<a href='#' onClick={e => e.preventDefault()}>
 													{' '}
@@ -117,12 +110,7 @@ export default function SectionLatestVideos () {
 													In His Own Words </a>
 											</h4>
 											<p className={classes.description}>
-												<small>Matthew 28:19-20 'Go and testify” – Yeshua</small>
-												<br/>
-												Every day is a day to testify of YHWH in your life! These videos don’t
-												just give you a chance to hear what YHWH did in other people’s lives but
-												gives you a chance to share what He did in yours as well! Come and
-												testify of His goodness with us!
+												<small>Matthew 28:19-20 'Go and testify”</small>
 												<br/>
 												<a href='#' onClick={e => e.preventDefault()}>
 													{' '}
@@ -162,10 +150,6 @@ export default function SectionLatestVideos () {
 											<p className={classes.description}>
 												<small>John 8:32 'The truth shall make you free” – Yeshua</small>
 												<br/>
-												Hear the story of how Yeshua Network founder, Nathan Wheeler, flatlined,
-												visited paradise (heaven) and was sent back to life by YHWH (God) to
-												tell his story and start the ministry you see here today.
-												<br/>
 												<a href='#' onClick={e => e.preventDefault()}>
 													{' '}
 													Read More{' '}
@@ -202,13 +186,7 @@ export default function SectionLatestVideos () {
 													Faith Is Our Salvation </a>
 											</h4>
 											<p className={classes.description}>
-												<small>Matthew 5:14-16 “You are the light of the world…” –
-													Yeshua</small>
-												<br/>
-												On the 22nd of every month believers all over the world stand in unity
-												(regardless of denomination), they light a candle at sunset, post a
-												picture of it with #BeTheLight on their social media pages. Together the
-												body of Christ shines brightly for all to see!
+												<small>Matthew 5:14-16 “You are the light of the world…”</small>
 												<br/>
 												<a href='#' onClick={e => e.preventDefault()}>
 													{' '}
