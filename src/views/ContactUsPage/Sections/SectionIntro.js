@@ -25,7 +25,7 @@ export default function SectionIntro () {
 				</GridItem>
 				<GridItem xs={12} sm={12} md={8}>
 					<h5 className={classes.description}>
-						For prayer request, site suggestions, or professional inquiries please use the forms below.
+						For prayer request, site suggestions, or professional inquiries please use the form below.
 						<br/>
 						Please sign up for our newsletter below.
 					</h5>
