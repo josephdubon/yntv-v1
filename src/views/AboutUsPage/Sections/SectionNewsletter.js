@@ -14,7 +14,7 @@ import InputAdornment from '@material-ui/core/InputAdornment'
 // @material-ui icons
 import Mail from '@material-ui/icons/Mail'
 
-import bg7 from 'assets/img/bg7.jpg'
+import bg7 from 'assets/img/bg-images/mountainSnow.jpg'
 
 import styles from 'assets/jss/yeshua-network/views/componentsSections/preFooter.js'
 

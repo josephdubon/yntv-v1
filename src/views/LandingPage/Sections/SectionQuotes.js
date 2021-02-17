@@ -13,7 +13,7 @@ import CardBody from 'components/Card/CardBody.js'
 import CardFooter from 'components/Card/CardFooter.js'
 import testimonialsStyle from 'assets/jss/yeshua-network/views/sectionsSections/testimonialsStyle.js'
 
-import dg2 from 'assets/img/dg2.jpg'
+import dg2 from 'assets/img/bg-images/mountainValleyGreenSnow.jpg'
 
 const useStyles = makeStyles(testimonialsStyle)
 
