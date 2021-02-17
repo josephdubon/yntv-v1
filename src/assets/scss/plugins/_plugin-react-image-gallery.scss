@@ -56,11 +56,11 @@
 }
 
 .image-gallery-thumbnail {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   cursor: pointer;
   position: relative;
-  line-height: 0px;
+  line-height: 0;
   width: 125px;
   border: none !important;
 
@@ -90,8 +90,8 @@
 .image-gallery-thumbnails-container {
   position: relative;
   // width: 99999px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   text-align: center;
 }
