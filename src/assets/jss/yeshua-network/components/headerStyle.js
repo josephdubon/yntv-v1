@@ -20,8 +20,8 @@ const headerStyle = theme => ({
 	appBar: {
 		display: 'flex',
 		border: '0',
-		borderRadius: '3px',
-		padding: '0.625rem 0',
+		borderRadius: '0',
+		padding: '0',
 		marginBottom: '20px',
 		color: grayColor[15],
 		width: '100%',
@@ -52,6 +52,13 @@ const headerStyle = theme => ({
 		justifyContent: 'space-between',
 		display: 'flex',
 		flexWrap: 'nowrap'
+	},
+	logoHeader: {
+		display: 'flex',
+		flexFlow: 'row nowrap',
+		justifyItems: 'center',
+		justifyContent: 'center',
+		height: '80px',
 	},
 	title: {
 		letterSpacing: 'unset',
