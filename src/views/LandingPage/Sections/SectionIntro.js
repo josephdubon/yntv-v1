@@ -18,7 +18,6 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar'
 import Avatar from '@material-ui/core/Avatar'
 
 import productStyle from 'assets/jss/yeshua-network/views/landingPageSections/productStyle.js'
-import classNames from 'classnames'
 
 const useStyles = makeStyles(productStyle)
 
