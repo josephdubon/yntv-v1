@@ -6,11 +6,6 @@ import React from 'react'
 import classNames from 'classnames'
 // @material-ui
 import Favorite from '@material-ui/icons/Favorite'
-import Share from '@material-ui/icons/Share'
-import ShoppingCart from '@material-ui/icons/ShoppingCart'
-import TwitterIcon from '@material-ui/icons/Twitter'
-import FacebookIcon from '@material-ui/icons/Facebook'
-import InstagramIcon from '@material-ui/icons/Instagram'
 // core components
 import Header from 'components/Header/Header.js'
 import Footer from 'components/Footer/Footer.js'
@@ -29,15 +24,14 @@ import SectionNewsletter from './Sections/SectionNewsletter'
 // @material-ui/core components
 import GridContainer from '../../components/Grid/GridContainer'
 import GridItem from '../../components/Grid/GridItem'
-import Button from '../../components/CustomButtons/Button'
 
 import { makeStyles } from '@material-ui/core/styles'
 
 // For slider
 import Carousel from 'react-slick'
-import dg1 from '../../assets/img/dg1.jpg'
-import dg2 from '../../assets/img/dg2.jpg'
-import dg3 from '../../assets/img/dg3.jpg'
+import dg1 from '../../assets/img/bg-images/handsCircle.jpg'
+import dg2 from '../../assets/img/bg-images/handPrayingBible.jpg'
+import dg3 from '../../assets/img/bg-images/mountainEagles.jpg'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import { Link } from 'react-router-dom'
@@ -53,7 +47,7 @@ export default function LandingPage ({ ...rest }) {
 	const settings = {
 		dots: true,
 		infinite: true,
-		speed: 1000,
+		speed: 2000,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true
@@ -63,7 +57,7 @@ export default function LandingPage ({ ...rest }) {
 			<Header
 				color='transparent'
 				brand='Yeshua Network'
-				links={<HeaderLinks dropdownHoverColor='info'/>}
+				links={<HeaderLinks dropdownHoverColor='primary'/>}
 				fixed
 				changeColorOnScroll={{
 					height: 300,
@@ -79,8 +73,11 @@ export default function LandingPage ({ ...rest }) {
 						style={{ backgroundImage: `url("${dg1}")` }}
 					>
 						<div className={classes.container}>
-							<GridContainer>
-								<GridItem xs={12} sm={6} md={6}>
+							<GridContainer
+								justify="center"
+								alignItems="center"
+							>
+								<GridItem xs={12} sm={10} md={8}>
 									<h1 className={classes.title}>Yeshua Network</h1>
 									<h4>
 										Welcome to the Yeshua Network we create content and media of all types that
@@ -90,19 +87,6 @@ export default function LandingPage ({ ...rest }) {
 										We create content that stands on the written word of YHWH, and the teachings of
 										Yeshua Ha’Mashiach and His disciples.
 									</h4>
-									<br/>
-									<Button color="primary" size="lg">
-										Read more
-									</Button>
-									<Button justIcon color="white" simple>
-										<TwitterIcon/>
-									</Button>
-									<Button justIcon color="white" simple>
-										<FacebookIcon/>
-									</Button>
-									<Button justIcon color="white" simple>
-										<InstagramIcon/>
-									</Button>
 								</GridItem>
 							</GridContainer>
 						</div>
@@ -116,17 +100,11 @@ export default function LandingPage ({ ...rest }) {
 						style={{ backgroundImage: `url("${dg2}")` }}
 					>
 						<div className={classes.container}>
-							<GridContainer>
-								<GridItem
-									xs={12}
-									sm={8}
-									md={8}
-									className={classNames(
-										classes.mlAuto,
-										classes.mrAuto,
-										classes.textCenter
-									)}
-								>
+							<GridContainer
+								justify="center"
+								alignItems="center"
+							>
+								<GridItem xs={12} sm={10} md={8}>
 									<h2 className={classes.title}>...like all of creation, everything here points
 										towards Him.</h2>
 									<h4>
@@ -135,26 +113,12 @@ export default function LandingPage ({ ...rest }) {
 										of Kings! Our name is the “Yeshua” network because, like
 										all of creation, everything here points towards Him.
 									</h4>
-									<br/>
-									<h6>Connect with us on:</h6>
-									<div>
-										<Button color="white" simple size="lg" justIcon>
-											<TwitterIcon/>
-										</Button>
-										<Button color="white" simple size="lg" justIcon>
-											<FacebookIcon/>
-										</Button>
-										<Button color="white" simple size="lg" justIcon>
-											<InstagramIcon/>
-										</Button>
-									</div>
 								</GridItem>
 							</GridContainer>
 						</div>
 					</div>
 				</div>
 				{/* Carousel 2 END */}
-
 
 				{/* Carousel 3 START */}
 				<div>
@@ -163,31 +127,18 @@ export default function LandingPage ({ ...rest }) {
 						style={{ backgroundImage: `url("${dg3}")` }}
 					>
 						<div className={classes.container}>
-							<GridContainer>
-								<GridItem
-									xs={12}
-									sm={7}
-									md={7}
-									className={classNames(classes.mlAuto, classes.textRight)}
-								>
+							<GridContainer
+								justify="center"
+								alignItems="center"
+							>
+								<GridItem xs={12} sm={10} md={8}>
 									<h2 className={classes.title}>Be blessed by our ministry.</h2>
 									<h4>
 										We hope you are blessed by our ministry here at the Yeshua Network and that it
 										inspires you to be a blessing in all that you do.
 										<br/>
-										<br/>
-										Feel free to stop by our shop and show support by purchasing a t-shirt, coffee
-										mug or t-shirt.
+										Please check back soon, we are constantly creating content and updates.
 									</h4>
-									<br/>
-									<div>
-										<Button color="white" simple size="lg">
-											<Share/> Share Offer
-										</Button>
-										<Button color="primary" size="lg">
-											<ShoppingCart/> Shop now
-										</Button>
-									</div>
 								</GridItem>
 							</GridContainer>
 						</div>
@@ -221,20 +172,20 @@ export default function LandingPage ({ ...rest }) {
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
 									<Link
-										to='/about-us'
+										to='/about'
 										className={classes.block}
 									>
 										About
 									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
-									<Link to='blog-posts' className={classes.block}>
+									<Link to='news' className={classes.block}>
 										News
 									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
 									<Link
-										to='/contact-us'
+										to='/contact'
 										className={classes.block}
 									>
 										Contact
