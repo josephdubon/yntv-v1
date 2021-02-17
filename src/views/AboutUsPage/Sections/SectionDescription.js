@@ -14,7 +14,7 @@ import GridItem from 'components/Grid/GridItem.js'
 import InfoArea from 'components/InfoArea/InfoArea.js'
 
 import featuresStyle from 'assets/jss/yeshua-network/views/sectionsSections/featuresStyle.js'
-import bg9 from 'assets/img/bg9.jpg'
+import bg9 from 'assets/img/bg-images/bwmountainTeamWork.jpg'
 
 const useStyles = makeStyles(featuresStyle)
 
