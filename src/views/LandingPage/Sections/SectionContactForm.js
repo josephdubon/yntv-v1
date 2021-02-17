@@ -21,7 +21,7 @@ import Button from 'components/CustomButtons/Button.js'
 
 import contactsStyle from 'assets/jss/yeshua-network/views/sectionsSections/contactsStyle.js'
 
-import city from 'assets/img/examples/city.jpg'
+import seaShells from 'assets/img/bg-images/bwholdingCross.jpg'
 
 const useStyles = makeStyles(contactsStyle)
 
@@ -47,7 +47,7 @@ export default function SectionContacts ({ ...rest }) {
 					sm={12}
 					md={12}
 					className={classes.contacts + ' ' + classes.section}
-					style={{ backgroundImage: `url(${city})` }}
+					style={{ backgroundImage: `url(${seaShells})` }}
 				>
 					<GridContainer className={classes.container}>
 						<GridItem xs={12} sm={12} md={5} lg={4}>
