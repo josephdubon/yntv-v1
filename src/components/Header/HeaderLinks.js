@@ -59,7 +59,6 @@ export default function HeaderLinks (props) {
 		}
 		animateScroll()
 	}
-	let onClickSections = {}
 
 	const { dropdownHoverColor } = props
 	const classes = useStyles()
@@ -71,17 +70,17 @@ export default function HeaderLinks (props) {
 				</Link>
 			</ListItem>
 			<ListItem className={classes.listItem}>
-				<Link to='/about-us' className={classes.listItem}>
+				<Link to='/about' className={classes.listItem}>
 					<AccountBalance className={classes.dropdownIcons}/> About
 				</Link>
 			</ListItem>
 			<ListItem className={classes.listItem}>
-				<Link to='/blog-posts' className={classes.listItem}>
+				<Link to='/news' className={classes.listItem}>
 					<ViewQuilt className={classes.dropdownIcons}/> News
 				</Link>
 			</ListItem>
 			<ListItem className={classes.listItem}>
-				<Link to='/contact-us' className={classes.listItem}>
+				<Link to='/contact' className={classes.listItem}>
 					<LocationOn className={classes.dropdownIcons}/> Contact
 				</Link>
 			</ListItem>
