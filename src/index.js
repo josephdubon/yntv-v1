@@ -23,6 +23,7 @@ import 'assets/scss/yeshua-network.scss'
 
 // pages for this product
 import AboutUsPage from 'views/AboutUsPage/AboutUsPage.js'
+import VideosPage from 'views/VideosPage/VideosPage.js'
 // import BlogPostPage from 'views/BlogPostPage/BlogPostPage.js'
 import BlogPostsPage from 'views/BlogPostsPage/BlogPostsPage.js'
 // import ComponentsPage from 'views/ComponentsPage/ComponentsPage.js'
@@ -44,6 +45,7 @@ ReactDOM.render(
     <Router history={hist}>
         <Switch>
             <Route path="/about" component={AboutUsPage}/>
+            <Route path="/videos" component={VideosPage}/>
             {/*<Route path="/blog-post" component={BlogPostPage}/>*/}
             <Route path="/news" component={BlogPostsPage}/>
             {/*<Route path="/components" component={ComponentsPage}/>*/}
