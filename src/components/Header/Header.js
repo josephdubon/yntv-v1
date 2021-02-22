@@ -17,7 +17,7 @@ import Menu from '@material-ui/icons/Menu'
 import Close from '@material-ui/icons/Close'
 // core components
 import styles from 'assets/jss/yeshua-network/components/headerStyle.js'
-import { ReactComponent as Logo } from 'assets/svg/yeshua-logo-v1-square.svg'
+// import { ReactComponent as Logo } from 'assets/svg/yeshua-logo-v1-square.svg'
 
 const useStyles = makeStyles(styles)
 
@@ -68,8 +68,8 @@ export default function Header (props) {
 		<AppBar className={appBarClasses}>
 			<Toolbar className={classes.container}>
 				<Button className={classes.title}>
-					{/*<Link to="/">{brand}</Link>*/}
-					<Link to="/"><Logo className={classes.logoHeader} alt="Yeshua Network"/></Link>
+					<Link to="/">{brand}</Link>
+					{/*<Link to="/"><Logo className={classes.logoHeader} alt="Yeshua Network"/></Link>*/}
 				</Button>
 				<Hidden smDown implementation="css" className={classes.hidden}>
 					<div className={classes.collapse}>{links}</div>

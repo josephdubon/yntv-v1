@@ -90,6 +90,14 @@ export default function BlogPostsPage () {
 									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
+									<Link
+										to='/videos'
+										className={classes.block}
+									>
+										Videos
+									</Link>
+								</ListItem>
+								<ListItem className={classes.inlineBlock}>
 									<Link to='news' className={classes.block}>
 										News
 									</Link>

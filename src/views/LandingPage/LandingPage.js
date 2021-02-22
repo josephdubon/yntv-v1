@@ -179,6 +179,14 @@ export default function LandingPage ({ ...rest }) {
 									</Link>
 								</ListItem>
 								<ListItem className={classes.inlineBlock}>
+									<Link
+										to='/videos'
+										className={classes.block}
+									>
+										Videos
+									</Link>
+								</ListItem>
+								<ListItem className={classes.inlineBlock}>
 									<Link to='news' className={classes.block}>
 										News
 									</Link>

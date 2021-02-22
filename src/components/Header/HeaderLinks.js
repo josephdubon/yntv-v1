@@ -18,6 +18,7 @@ import AccountBalance from '@material-ui/icons/AccountBalance'
 import styles from 'assets/jss/yeshua-network/components/headerLinksStyle.js'
 import { ViewQuilt } from '@material-ui/icons'
 import LocationOn from '@material-ui/icons/LocationOn'
+import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 
 const useStyles = makeStyles(styles)
 
@@ -72,6 +73,11 @@ export default function HeaderLinks (props) {
 			<ListItem className={classes.listItem}>
 				<Link to='/about' className={classes.listItem}>
 					<AccountBalance className={classes.dropdownIcons}/> About
+				</Link>
+			</ListItem>
+			<ListItem className={classes.listItem}>
+				<Link to='/videos' className={classes.listItem}>
+					<VideoLibraryIcon className={classes.dropdownIcons}/> Videos
 				</Link>
 			</ListItem>
 			<ListItem className={classes.listItem}>
